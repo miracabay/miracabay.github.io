@@ -7,7 +7,18 @@
 </head>
 <body>
     <img src="sitelogo.png" width="100%">
+    
+    <!-- BURAYA NAVBAR GELECEK -->
+    <div id="navbar-container"></div>
+
     <h1>Birkan</h1>
     <p>yapılma sürecinde</p>
+
+    <!-- JavaScript ile navbar'ı yükle -->
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('navbar-container').innerHTML = data);
+    </script>
 </body>
 </html>
