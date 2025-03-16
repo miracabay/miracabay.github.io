@@ -1,0 +1,26 @@
+.navbar-nav {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+}
+
+    /* Menü Üst Düzeni */
+    .navbar-nav > li {
+        position: relative;
+        margin: 0 0; /* Yanlarda biraz boşluk */
+    }
+
+        .navbar-nav > li > a {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 10px 15px;
+            background-color: #1e1e1e;
+            transition: all 0.2s ease;
+            line-height: 1.5; /* Menü metinlerinin aynı hizada olması */
+        }
+
+            .navbar-nav > li > a:hover {
+                background-color: #333333;
+                color: #00d1ff;
+            }
