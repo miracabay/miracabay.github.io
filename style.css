@@ -25,7 +25,8 @@ nav {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Öğeleri yatayda ortalar */
+    align-items: center; /* Öğeleri dikeyde ortalar */
 }
 
 .navbar-nav li {
@@ -38,9 +39,10 @@ nav {
     padding: 10px 15px;
     background-color: #1e1e1e;
     transition: all 0.2s ease;
+    font-size: 2em; /* Yazı boyutunu dinamik hale getirme */
 }
 
-/* Hover durumunda yazı rengini kırmızı yap */
+/* Hover durumunda yazı rengi koyu kırmızı yap */
 .navbar-nav a:hover {
     background-color: #333333;
     color: #8B0000; /* Koyu kırmızı */
