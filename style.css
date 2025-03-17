@@ -37,7 +37,7 @@ nav {
 
 /* Logonun altında navbarın çıkmasını sağlar */
 #navbar-container {
-    margin-top: 10px; /* Logodan aşağı boşluk bırakır */
+    margin-top: -4px; /* Logodan aşağı boşluk bırakır */
 }
 
 /* Responsive Tasarım İçin Medya Sorguları */
