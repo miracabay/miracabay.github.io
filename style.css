@@ -6,6 +6,9 @@ nav {
     padding: 10px 0;
     overflow: hidden;  /* Taşma engelleme */
     position: relative;  /* Logo'yu doğru konumlamak için */
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    
 }
 
 /* Logo'yu navbar üzerinde konumlandırma */
@@ -44,6 +47,6 @@ nav {
 }
 
 .rounded-image {
-    border-bottom-left-radius: 30px;  /* Alt sol köşe yuvarlatma */
+    border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
 }
