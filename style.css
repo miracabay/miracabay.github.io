@@ -5,7 +5,7 @@ nav {
     background-color: #1e1e1e;
     text-align: center;
     padding: 10px 0;
-    border-radius: 8px; /* Hafif köşeleri yuvarlatma */
+    border-radius: 8px;
 }
 
 /* Menü Stili */
@@ -35,9 +35,24 @@ nav {
     color: #00d1ff;
 }
 
-/* Logonun altında navbarın çıkmasını sağlar */
+/* Logonun hemen altında navbarı yapıştır */
 #navbar-container {
-    margin-top: -4px; /* Logodan aşağı boşluk bırakır */
+    margin-top: -4px; /* Boşluğu tamamen kaldır */
+}
+
+/* Sayfanın varsayılan boşluklarını kaldır */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Resim boşluk bırakmasın */
+img {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
 }
 
 /* Responsive Tasarım İçin Medya Sorguları */
