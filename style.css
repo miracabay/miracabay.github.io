@@ -30,3 +30,7 @@ nav {
     background-color: #333333;
     color: #00d1ff;
 }
+
+.rounded-image {
+    border-radius: 15px; /* Burada köşe yuvarlama değerini ayarlayın */
+}
