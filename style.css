@@ -8,7 +8,6 @@ nav {
     position: relative;  /* Logo'yu doğru konumlamak için */
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    
 }
 
 /* Logo'yu navbar üzerinde konumlandırma */
@@ -41,9 +40,10 @@ nav {
     transition: all 0.2s ease;
 }
 
+/* Hover durumunda yazı rengini kırmızı yap */
 .navbar-nav a:hover {
     background-color: #333333;
-    color: #00d1ff;
+    color: red; /* Mavi yerine kırmızı renk */
 }
 
 .rounded-image {
