@@ -23,6 +23,7 @@ nav {
     padding: 10px 15px;
     background-color: #1e1e1e;
     transition: all 0.2s ease;
+    border-radius: 10px;
 }
 
 .navbar-nav a:hover {
