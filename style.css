@@ -1,26 +1,56 @@
-.navbar-nav {
-    list-style: none;
-    padding: 10px;
-    margin: 0;
-    display: flex;
+/* Navbar Genel Stil */
+.navbar {
+    width: 100%; /* Sayfanın tamamını kaplasın */
+    background-color: #1e1e1e;
+    padding: 10px 0;
+    position: fixed; /* Sayfa kaydırıldığında sabit kalsın */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Üstte kalmasını sağlıyoruz */
 }
 
-    /* Menü Üst Düzeni */
-    .navbar-nav > li {
-        position: relative;
-        margin: 0 0; /* Yanlarda biraz boşluk */
+/* Navbar İçeriği */
+.navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Linkleri ortaya hizala */
+    align-items: center;
+}
+
+/* Navbar Linkleri */
+.navbar-nav > li {
+    margin: 0 15px; /* Linkler arasında boşluk */
+}
+
+.navbar-nav > li > a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    transition: all 0.3s;
+    font-size: 18px;
+}
+
+.navbar-nav > li > a:hover {
+    background-color: #333;
+    color: #00d1ff;
+}
+
+/* Mobil İçin (Ekran 768px'den küçükse) */
+@media screen and (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
     }
 
-        .navbar-nav > li > a {
-            text-decoration: none;
-            color: #ffffff;
-            padding: 10px 15px;
-            background-color: #1e1e1e;
-            transition: all 0.2s ease;
-            line-height: 1.5; /* Menü metinlerinin aynı hizada olması */
-        }
+    .navbar-nav > li {
+        width: 100%;
+        text-align: center;
+    }
 
-            .navbar-nav > li > a:hover {
-                background-color: #333333;
-                color: #00d1ff;
-            }
+    .navbar-nav > li > a {
+        width: 100%;
+        padding: 12px;
+    }
+}
