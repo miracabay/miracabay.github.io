@@ -1,14 +1,11 @@
-/* Navbar Genel Ayarları */
+/* Navbar Stil Ayarları */
 nav {
-    width: calc(100% - 40px); /* Sağdan ve soldan 20px boşluk */
-    margin: 0 auto; /* Ortalamak için */
+    width: 100%;
     background-color: #1e1e1e;
     text-align: center;
     padding: 10px 0;
-    border-radius: 8px; /* Hafif köşeleri yuvarlatma */
 }
 
-/* Menü Stili */
 .navbar-nav {
     list-style: none;
     padding: 0;
@@ -27,17 +24,11 @@ nav {
     padding: 10px 15px;
     background-color: #1e1e1e;
     transition: all 0.2s ease;
-    border-radius: 5px;
 }
 
 .navbar-nav a:hover {
     background-color: #333333;
     color: #00d1ff;
-}
-
-/* Logonun altında navbarın çıkmasını sağlar */
-#navbar-container {
-    margin-top: 10px; /* Logodan aşağı boşluk bırakır */
 }
 
 /* Responsive Tasarım İçin Medya Sorguları */
@@ -47,8 +38,5 @@ nav {
     }
     .navbar-nav li {
         margin: 5px 0;
-    }
-    nav {
-        width: calc(100% - 20px); /* Mobilde daha küçük boşluk */
     }
 }
