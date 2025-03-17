@@ -3,6 +3,8 @@ nav {
     background-color: #1e1e1e;
     text-align: center;
     padding: 10px 0;
+    border-radius: 10px; /* Navbar'ın köşelerini yuvarlatmak için ekledik */
+    overflow: hidden; /* İçerik taşarsa navbar'ın yuvarlak köşelerine taşma yapmaması için */
 }
 
 .navbar-nav {
