@@ -4,8 +4,6 @@ nav {
     background-color: #1e1e1e;
     text-align: center;
     padding: 10px 0;
-    border-bottom-left-radius: 10px;  /* Alt sol köşe yuvarlatma */
-    border-bottom-right-radius: 10px; /* Alt sağ köşe yuvarlatma */
     overflow: hidden;  /* Taşma engelleme */
     position: relative;  /* Logo'yu doğru konumlamak için */
 }
@@ -38,7 +36,6 @@ nav {
     padding: 10px 15px;
     background-color: #1e1e1e;
     transition: all 0.2s ease;
-    border-radius: 30px;
 }
 
 .navbar-nav a:hover {
@@ -47,5 +44,6 @@ nav {
 }
 
 .rounded-image {
-    border-radius: 30px;  /* Logo'nun yuvarlak olması için */
+    border-bottom-left-radius: 30px;  /* Alt sol köşe yuvarlatma */
+    border-bottom-right-radius: 30px;
 }
