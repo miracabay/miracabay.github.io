@@ -1,43 +1,34 @@
-/* Navbar Genel Ayarları */
-nav {
-    width: calc(100% - 40px); /* Sağdan ve soldan 20px boşluk */
-    margin: 0 auto; /* Ortalamak için */
-    background-color: #1e1e1e;
-    text-align: center;
-    padding: 10px 0;
-    border-radius: 8px;
-}
-
-/* Menü Stili */
 .navbar-nav {
     list-style: none;
-    padding: 0;
+    padding: 10px;
     margin: 0;
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Menü öğelerini ortalar */
 }
 
-.navbar-nav li {
-    margin: 0 10px;
+/* Menü Üst Düzeni */
+.navbar-nav > li {
+    position: relative;
+    margin: 0 10px; /* Sağdan soldan biraz boşluk */
 }
 
-.navbar-nav a {
+.navbar-nav > li > a {
     text-decoration: none;
     color: #ffffff;
     padding: 10px 15px;
     background-color: #1e1e1e;
     transition: all 0.2s ease;
-    border-radius: 5px;
+    line-height: 1.5;
 }
 
-.navbar-nav a:hover {
+.navbar-nav > li > a:hover {
     background-color: #333333;
     color: #00d1ff;
 }
 
-/* Logonun hemen altında navbarı yapıştır */
+/* Navbar ile logo arasındaki boşluğu kaldır */
 #navbar-container {
-    margin-top: -4px; /* Boşluğu tamamen kaldır */
+    margin-top: -4px; /* Navbar'ı yukarı çekiyor */
 }
 
 /* Sayfanın varsayılan boşluklarını kaldır */
@@ -46,24 +37,8 @@ body, html {
     padding: 0;
 }
 
-/* Resim boşluk bırakmasın */
+/* Logonun altındaki boşluğu sıfırla */
 img {
     display: block;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    width: 100%;
-}
-
-/* Responsive Tasarım İçin Medya Sorguları */
-@media (max-width: 768px) {
-    .navbar-nav {
-        flex-direction: column;
-    }
-    .navbar-nav li {
-        margin: 5px 0;
-    }
-    nav {
-        width: calc(100% - 20px); /* Mobilde daha küçük boşluk */
-    }
+    margin-bottom: -4px;
 }
