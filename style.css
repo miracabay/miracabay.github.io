@@ -23,16 +23,5 @@
 
 .navbar-nav > li > a:hover {
     background-color: #333333;
-    color: #00d1ff;
-}
-
-/* Navbar ile logo arasındaki boşluğu kaldır */
-#navbar-container {
-    margin-top: -4px; /* Navbar'ı yukarı çekiyor */
-}
-
-/* Sayfanın varsayılan boşluklarını kaldır */
-body, html {
-    margin: 0;
-    padding: 0;
+    color: #ff0000;
 }
