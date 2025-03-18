@@ -1,51 +1,44 @@
-/* Navbar'ın genel düzeni */
-nav {
-    width: 100%;
-    background-color: #1e1e1e;
-    text-align: center;
-    padding: 10px 0;
-    overflow: hidden;  /* Taşma engelleme */
-    position: relative;  /* Logo'yu doğru konumlamak için */
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-}
-
-/* Logo'yu navbar üzerinde konumlandırma */
-.navbar-logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);  /* Ortalamak için */
-    max-width: 150px; /* Logonun boyutunu ihtiyacınıza göre ayarlayın */
-}
-
-/* Navbar bağlantıları */
 .navbar-nav {
     list-style: none;
-    padding: 0;
+    padding: 10px;
     margin: 0;
     display: flex;
+    justify-content: center; /* Menü öğelerini ortalar */
 }
 
-.navbar-nav li {
-    margin: 0 10px;
+/* Menü Üst Düzeni */
+.navbar-nav > li {
+    position: relative;
+    margin: 0 10px; /* Sağdan soldan biraz boşluk */
 }
 
-.navbar-nav a {
+.navbar-nav > li > a {
     text-decoration: none;
     color: #ffffff;
     padding: 10px 15px;
     background-color: #1e1e1e;
     transition: all 0.2s ease;
+    line-height: 1.5;
 }
 
-/* Hover durumunda yazı rengi koyu kırmızı yap */
-.navbar-nav a:hover {
+.navbar-nav > li > a:hover {
     background-color: #333333;
-    color: #8B0000; /* Koyu kırmızı */
+    color: #00d1ff;
 }
 
-.rounded-image {
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+/* Navbar ile logo arasındaki boşluğu kaldır */
+#navbar-container {
+    margin-top: -4px; /* Navbar'ı yukarı çekiyor */
+}
+
+/* Sayfanın varsayılan boşluklarını kaldır */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Logonun altındaki boşluğu sıfırla */
+img {
+    display: block;
+    margin-bottom: -4px;
 }
