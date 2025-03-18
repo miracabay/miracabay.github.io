@@ -36,9 +36,3 @@ body, html {
     margin: 0;
     padding: 0;
 }
-
-/* Logonun altındaki boşluğu sıfırla */
-img {
-    display: block;
-    margin-bottom: -4px;
-}
