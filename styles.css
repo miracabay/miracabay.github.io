@@ -54,6 +54,7 @@ body {
 .banner img {
     width: 100%; /* Görselin genişliğini ekran genişliğine göre ayarlıyoruz */
     height: auto; /* Yüksekliği orantılı şekilde ayarlıyoruz */
+    overflow: visible;
 }
 
 /* Sayfa İçeriği */
