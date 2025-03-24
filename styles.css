@@ -35,7 +35,7 @@ body {
 .navbar ul li a {
     color: white;
     text-decoration: none;
-    padding: 14px 20px;
+    padding: 10px 15px;
     display: block;
     transition: background-color 0.3s, border-radius 0.3s; /* border-radius için de geçiş ekledik */
     border-radius: 30px; /* Başlangıçta yuvarlak köşeler */
