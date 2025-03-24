@@ -49,17 +49,18 @@ body {
 
 /* Banner Düzeni */
 .banner {
-    text-align: center; /* Banner'ı ortalayalım */
-    margin-top: 61px; /* Navbar'ın yüksekliğine göre margin ekliyoruz */
-    width: 100%; /* Banner genişliği ekran genişliğine göre ayarlanır */
-    height: 600px; /* Banner yüksekliği sabit kalsın, istediğiniz yüksekliği ayarlayın */
-    overflow: hidden; /* Görüntü taşarsa gizler */
+    text-align: center;
+    margin-top: 61px;
+    width: 100%;
+    height: 400px; /* Yükseklik sabit */
+    overflow: hidden; 
 }
 
 .banner img {
-    width: 100%; /* Görselin genişliği %100 olacak */
-    height: 100%; /* Görselin yüksekliği de %100 olacak */
-    object-fit: cover; /* Görselin orantısız şekilde büyüyüp alanı kaplamasını sağlar */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Görselin orantılı şekilde kesilmesini sağlar */
+    object-position: bottom right; /* Görselin sağ alt köşesini ön planda tutar */
 }
 
 .visual-bar {
