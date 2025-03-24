@@ -77,6 +77,9 @@ h2 {
     text-align: center;
     font-family: 'Clicker Script', cursive;
     white-space: pre;
+    margin: 0; /* Üst ve alt margin'i sıfırlar */
+    padding: 0; /* İç boşluğu sıfırlar */
+    line-height: 1.2; /* Satır yüksekliğini küçültür, normalde 1.5 gibi bir de
 }
 
 p {
