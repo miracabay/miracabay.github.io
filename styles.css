@@ -81,6 +81,7 @@ h2 {
     margin-top: 0;
     margin-bottom: 0;
     line-height: 1.1; /* Satır arasındaki mesafeyi daraltır */
+    display: inline-block; /* Satır içi öğe gibi davranmasını sağlar */
 }
 
 p {
