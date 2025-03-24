@@ -50,8 +50,8 @@ body {
 .banner {
     text-align: center; /* Banner'ı ortalayalım */
     margin-top: 60px; /* Navbar'ın yüksekliğine göre margin ekliyoruz */
-    overflow: hidden;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0 50%); /* Sol alt köşeden 50x50'lik alanı çıkarıyoruz */
+    border-bottom-left-radius: 50px;
+    overflow: hiding;
 }
 
 .banner img {
