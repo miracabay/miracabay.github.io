@@ -38,9 +38,19 @@ body {
     background-color: #575757; /* Hover efekti */
 }
 
+.banner {
+    margin-top: 60px; /* Navbar'ın altından başlasın diye */
+    text-align: center; /* Banner'ı ortalayalım */
+}
+
+.banner img {
+    width: 100%; /* Görselin genişliğini ekran genişliğine göre ayarlıyoruz */
+    height: 50%; /* Yüksekliği orantılı şekilde ayarlıyoruz */
+}
+
 /* Sayfa İçeriği */
 h1 {
-    margin-top: 60px; /* Navbar'ın altında görünmesi için boşluk bırakıyoruz */
+    margin-top: 40px; /* Navbar'ın altında görünmesi için boşluk bırakıyoruz */
     text-align: center;
 }
 
