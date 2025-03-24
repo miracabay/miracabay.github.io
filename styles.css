@@ -14,7 +14,7 @@ body {
     width: 100%;
     z-index: 1000; /* Üstte kalması için */
     height: 60px; /* Navbar yüksekliği */
-    border-top-left-radius: 50px;
+    border-top-left-radius: 40px;
 }
 
 .navbar ul {
@@ -50,7 +50,7 @@ body {
 .banner {
     text-align: center; /* Banner'ı ortalayalım */
     margin-top: 60px; /* Navbar'ın yüksekliğine göre margin ekliyoruz */
-    border-bottom-left-radius: 50px;
+    border-bottom-left-radius: 40px;
     overflow: hidden;
 }
 
