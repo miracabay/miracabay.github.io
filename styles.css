@@ -37,6 +37,7 @@ body {
     padding: 14px 20px;
     display: block;
     transition: background-color 0.3s, border-radius 0.3s; /* border-radius için de geçiş ekledik */
+    border-radius: 30px; /* Başlangıçta yuvarlak köşeler */
 }
 
 .navbar ul li a:hover {
