@@ -78,7 +78,7 @@ body {
     border-bottom-right-radius: 0; /* Sağ alt köşe yuvarlamayı kaldır */
     border-bottom-left-radius: 60px; /* Sol alt köşe yuvarlamayı bırak */
     display: flex; /* Flexbox ile yerleşim */
-    justify-content: space-between; /* Sosyal medya simgeleri ve yazıyı ayırır */
+    justify-content: flex-end; /* Sosyal medya simgelerini sağa hizalar */ /* Sosyal medya simgeleri ve yazıyı ayırır */
     align-items: center; /* Yatayda ortala */
     box-sizing: border-box; /* Kutunun boyutunu dahil et */
 }
@@ -97,6 +97,7 @@ body {
     padding: 0;
     margin: 0;
     display: flex; /* Simgeleri yatayda sıralar */
+    margin-left: auto; /* Sosyal medya simgelerinin sola dayalı olmaması için */
 }
 
 /* Sosyal medya simgeleri */
