@@ -13,7 +13,7 @@ body {
     top: 0;
     width: 100%;
     z-index: 1000; /* Üstte kalması için */
-    height: 60px; /* Navbar yüksekliği */
+    height: 50px; /* Navbar yüksekliği */
 }
 
 .navbar ul {
@@ -27,7 +27,6 @@ body {
 }
 
 .navbar ul li {
-    margin: 0 15px;
 }
 
 .navbar ul li a {
@@ -39,17 +38,17 @@ body {
 }
 
 .navbar ul li a:hover {
-    background-color: #575757; /* Hover efekti */
+    background-color: #3e3e3e; /* Hover efekti */
 }
 
 /* Banner Düzeni */
 .banner {
     text-align: center; /* Banner'ı ortalayalım */
-    margin-top: 60px; /* Navbar'ın yüksekliğine göre margin ekliyoruz */
+    margin-top: 100px; /* Navbar'ın yüksekliğine göre margin ekliyoruz */
 }
 
 .banner img {
-    width: 100%; /* Görselin genişliğini ekran genişliğine göre ayarlıyoruz */
+    width: auto; /* Görselin genişliğini ekran genişliğine göre ayarlıyoruz */
     height: auto; /* Yüksekliği orantılı şekilde ayarlıyoruz */
 }
 
