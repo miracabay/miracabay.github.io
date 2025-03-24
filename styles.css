@@ -43,8 +43,9 @@ body {
 
 /* Banner Düzeni */
 .banner {
+    position: absolute;
+    top: 60px; /* Navbar'ın hemen altına yerleştir */
     text-align: center; /* Banner'ı ortalayalım */
-    margin-top: 100px; /* Navbar'ın yüksekliğine göre margin ekliyoruz */
 }
 
 .banner img {
