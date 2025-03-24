@@ -5,7 +5,7 @@ body {
     padding: 0;
     box-sizing: border-box; /* Border box ile her öğe daha düzenli olur */
     @import url('https://fonts.cdnfonts.com/css/new-york-font');
-    font-family: 'New York', sans-serif; /* New York fontunu burada uyguluyoruz */
+    font-family: 'New York Font', sans-serif; /* New York fontunu burada uyguluyoruz */
 }
 
 /* Navbar Düzeni */
