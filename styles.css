@@ -52,15 +52,12 @@ body {
     text-align: center;
     margin-top: 61px;
     width: 100%;
-    height: 400px; /* Yükseklik sabit */
-    overflow: hidden; 
+    height: auto;
 }
 
 .banner img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Görselin orantılı şekilde kesilmesini sağlar */
-    object-position: bottom right; /* Görselin sağ alt köşesini ön planda tutar */
 }
 
 .visual-bar {
@@ -86,6 +83,7 @@ body {
     justify-content: center; /* Her şeyin ortalanması */
     align-items: center; /* Yatayda ortala */
     box-sizing: border-box; /* Kutunun boyutunu dahil et */
+    height: 60px;
 }
 
 /* Footer içindeki metin */
@@ -100,7 +98,7 @@ body {
 .footer .social-media {
     list-style: none; /* Liste işaretlerini kaldır */
     padding: 0;
-    margin: 0;
+    margin: 5px 0 0 0;
     display: flex; /* Simgeleri yatayda sıralar */
     position: absolute; /* Sağ tarafa yerleştirmek için absolute konumlandırma */
     right: 0px; /* Sağdan 20px uzaklık */
@@ -147,6 +145,7 @@ body {
 /* Sayfa İçeriği */
 h1 {
     text-align: center;
+    margin-top: 30px;
     font-family: 'Clicker Script', cursive;
 }
 
