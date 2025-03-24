@@ -1,6 +1,8 @@
 /* Genel Sayfa Düzeni */
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box; /* Border box ile her öğe daha düzenli olur */
 }
 
@@ -8,13 +10,16 @@ body {
 .navbar {
     background-color: #1e1e1e; /* Arka plan rengi */
     position: fixed; /* Sabit navbar */
+    top: 0;
     width: 100%;
     z-index: 1000; /* Üstte kalması için */
-    height: 50px; /* Navbar yüksekliği */
+    height: 60px; /* Navbar yüksekliği */
 }
 
 .navbar ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center; /* Menü öğelerini dikeyde ortala */
@@ -22,6 +27,7 @@ body {
 }
 
 .navbar ul li {
+    margin: 0 15px;
 }
 
 .navbar ul li a {
@@ -33,25 +39,23 @@ body {
 }
 
 .navbar ul li a:hover {
-    background-color: #3e3e3e; /* Hover efekti */
+    background-color: #575757; /* Hover efekti */
 }
 
 /* Banner Düzeni */
 .banner {
-    position: absolute;
-    top: 50px; /* Navbar'ın hemen altına yerleştir */
     text-align: center; /* Banner'ı ortalayalım */
+    margin-top: 60px; /* Navbar'ın yüksekliğine göre margin ekliyoruz */
 }
 
 .banner img {
-    width: auto; /* Görselin genişliğini ekran genişliğine göre ayarlıyoruz */
+    width: 100%; /* Görselin genişliğini ekran genişliğine göre ayarlıyoruz */
     height: auto; /* Yüksekliği orantılı şekilde ayarlıyoruz */
 }
 
 /* Sayfa İçeriği */
 h1 {
     text-align: center;
-    margin-top: 20px;
 }
 
 p {
