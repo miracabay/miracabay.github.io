@@ -59,7 +59,7 @@ body {
 }
 
 .visual-bar {
-    margin-top: -7px;
+    margin-top: -5px;
     background-color: #1e1e1e; /* Navbar ile aynı arka plan rengi */
     height: 60px; /* Navbar yüksekliği ile aynı */
     width: 100%; /* Ekran genişliği kadar */
