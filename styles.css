@@ -67,6 +67,45 @@ body {
     position: relative; /* Konumlandırma */
 }
 
+/* Footer Düzeni */
+.footer {
+    background-color: #1e1e1e; /* Arka plan rengi */
+    color: white; /* Yazı rengi */
+    text-align: center; /* İçeriği ortala */
+    padding: 20px 0; /* Üst ve alt boşluk */
+    position: fixed; /* Sayfa kaydırılsa da sabit kalır */
+    bottom: 0; /* Alt kısma yerleştir */
+    width: 100%; /* Ekran genişliğine göre genişlik */
+    z-index: 1000; /* Navbar'dan üstte kalması için */
+}
+
+.footer p {
+    margin: 0; /* Paragrafın üst ve alt boşluğunu sıfırla */
+    font-size: 14px; /* Yazı boyutu */
+}
+
+.footer ul {
+    list-style: none; /* Liste işaretlerini kaldır */
+    margin: 10px 0 0 0; /* Üstten 10px boşluk */
+    padding: 0;
+}
+
+.footer ul li {
+    display: inline; /* Liste elemanlarını yan yana yerleştir */
+    margin: 0 15px; /* Her elemanın arasında boşluk bırak */
+}
+
+.footer ul li a {
+    color: white; /* Yazı rengi */
+    text-decoration: none; /* Alt çizgiyi kaldır */
+    transition: color 0.3s; /* Hover efekti */
+}
+
+.footer ul li a:hover {
+    color: #3e3e3e; /* Hover efekti */
+}
+
+
 /* Sayfa İçeriği */
 h1 {
     text-align: center;
