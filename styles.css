@@ -66,7 +66,6 @@ body {
     border-bottom-left-radius: 60px; /* Aynı yuvarlak köşeler */
     position: relative; /* Konumlandırma */
 }
-
 /* Footer Düzeni */
 .footer {
     background-color: #1e1e1e; /* Arka plan rengi */
@@ -79,8 +78,9 @@ body {
     border-bottom-left-radius: 60px; /* Sol alt köşe yuvarlamayı bırak */
     border-bottom-right-radius: 0; /* Sağ alt köşe yuvarlamayı kaldır */
     display: flex; /* Flexbox ile yerleşim */
-    justify-content: space-between; /* Sosyal medya simgeleri sağda, yazı ortada */
+    justify-content: center; /* Her şeyin ortalanması */
     align-items: center; /* Yatayda ortala */
+    box-sizing: border-box; /* Kutunun boyutunu dahil et */
 }
 
 /* Footer içindeki metin */
@@ -97,7 +97,8 @@ body {
     padding: 0;
     margin: 0;
     display: flex; /* Simgeleri yatayda sıralar */
-    margin-left: auto; /* Sosyal medya simgelerinin sola dayalı olmaması için */
+    position: absolute; /* Sağ tarafa yerleştirmek için absolute konumlandırma */
+    right: 20px; /* Sağdan 20px uzaklık */
 }
 
 /* Sosyal medya simgeleri */
