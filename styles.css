@@ -38,11 +38,18 @@ body {
     display: block;
     transition: background-color 0.3s, border-radius 0.3s; /* border-radius için de geçiş ekledik */
     border-radius: 30px; /* Başlangıçta yuvarlak köşeler */
+    outline: none; /* Outline'ı kaldırıyoruz */
 }
 
 .navbar ul li a:hover {
     background-color: #3e3e3e; /* Hover efekti */
     border-radius: 30px;
+}
+
+.navbar ul li a:focus {
+    outline: none; /* Outline'ı kaldırıyoruz */
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.6); /* Küçük bir beyaz kenarlık */
+    border-radius: 30px; /* Yuvarlak köşeleri koruyoruz */
 }
 
 /* Banner Düzeni */
