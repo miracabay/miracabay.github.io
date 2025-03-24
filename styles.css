@@ -68,17 +68,26 @@ body {
 }
 
 /* Footer Düzeni */
-/* Footer Düzeni */
 .footer {
     background-color: #1e1e1e; /* Arka plan rengi */
     color: white; /* Yazı rengi */
-    text-align: center; /* İçeriği ortala */
+    text-align: left; /* İçeriği sola hizala */
     padding: 20px 0; /* Üst ve alt boşluk */
     position: fixed; /* Sayfa kaydırılsa da sabit kalır */
     bottom: 0; /* Alt kısma yerleştir */
     width: 100%; /* Ekran genişliğine göre genişlik */
     z-index: 1000; /* Navbar'dan üstte kalması için */
     border-bottom-right-radius: 60px;
+    
+    display: flex; /* Flexbox ile yerleşim */
+    justify-content: space-between; /* İçerikleri arasına boşluk bırak */
+    align-items: center; /* Yatayda ortala */
+    padding: 0 20px; /* Sağ ve sol padding */
+}
+
+.footer p {
+    margin: 0; /* Paragrafın üst ve alt boşluğunu sıfırla */
+    font-size: 14px; /* Yazı boyutu */
 }
 
 /* Sosyal medya simgelerinin listesi */
@@ -86,11 +95,10 @@ body {
     list-style: none; /* Liste işaretlerini kaldır */
     padding: 0;
     margin: 0;
-    text-align: left; /* Sola hizala */
+    display: flex; /* Simgeleri yatayda sıralar */
 }
 
 .footer .social-media li {
-    display: inline-block; /* Simgeleri yatayda sıralar */
     margin-right: 20px; /* Aralarına boşluk bırak */
 }
 
@@ -117,9 +125,14 @@ body {
     color: #0A66C2; /* LinkedIn'in rengi */
 }
 
-/* Github Hover */
+/* GitHub Hover */
 .footer .social-media li a.github:hover {
     color: #333; /* GitHub'ın rengi */
+}
+
+/* Twitter Hover */
+.footer .social-media li a.twitter:hover {
+    color: #1DA1F2; /* Twitter'ın rengi */
 }
 
 /* Sayfa İçeriği */
