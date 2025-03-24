@@ -57,7 +57,6 @@ body {
     text-align: center; /* Banner'ı ortalayalım */
     margin-top: 60px; /* Navbar'ın yüksekliğine göre margin ekliyoruz */
     border-bottom-left-radius: 50px; /* Sol alt köşe yuvarlatma */
-    clip-path: inset(0 0 0 50px round 0 0 50px 50px); /* Yuvarlatma ve içeriği düzgün gösterme */
 }
 
 .banner img {
