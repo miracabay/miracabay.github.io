@@ -1,5 +1,5 @@
 /* Genel Sayfa Düzeni */
-    @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
 body {
     font-family: "Times New Roman", Times, serif;
     margin: 0;
@@ -67,6 +67,7 @@ body {
     position: relative; /* Konumlandırma */
 }
 
+/* Footer Düzeni */
 .footer {
     background-color: #1e1e1e; /* Arka plan rengi */
     color: white; /* Yazı rengi */
@@ -78,7 +79,7 @@ body {
     border-bottom-right-radius: 0; /* Sağ alt köşe yuvarlamayı kaldır */
     border-bottom-left-radius: 60px; /* Sol alt köşe yuvarlamayı bırak */
     display: flex; /* Flexbox ile yerleşim */
-    justify-content: flex-end; /* Sosyal medya simgelerini sağa hizalar */ /* Sosyal medya simgeleri ve yazıyı ayırır */
+    justify-content: space-between; /* Sosyal medya simgeleri sağda, yazı ortada */
     align-items: center; /* Yatayda ortala */
     box-sizing: border-box; /* Kutunun boyutunu dahil et */
 }
@@ -97,7 +98,6 @@ body {
     padding: 0;
     margin: 0;
     display: flex; /* Simgeleri yatayda sıralar */
-    margin-left: auto; /* Sosyal medya simgelerinin sola dayalı olmaması için */
 }
 
 /* Sosyal medya simgeleri */
