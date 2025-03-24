@@ -15,7 +15,6 @@ body {
     z-index: 1000; /* Üstte kalması için */
     height: 60px; /* Navbar yüksekliği */
     border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
 }
 
 .navbar ul {
@@ -24,7 +23,6 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
-    border-radius: 30px;
     align-items: center; /* Menü öğelerini dikeyde ortala */
     height: 100%; /* Navbar yüksekliği kadar yer kapla */
 }
@@ -51,7 +49,6 @@ body {
     text-align: center; /* Banner'ı ortalayalım */
     margin-top: 60px; /* Navbar'ın yüksekliğine göre margin ekliyoruz */
     border-bottom-left-radius: 50px; /* Sol alt köşe yuvarlatma */
-    border-bottom-right-radius: 50px; /* Sağ alt köşe yuvarlatma */
 }
 
 .banner img {
