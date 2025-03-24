@@ -98,7 +98,7 @@ body {
     margin: 0;
     display: flex; /* Simgeleri yatayda sıralar */
     position: absolute; /* Sağ tarafa yerleştirmek için absolute konumlandırma */
-    right: 10px; /* Sağdan 20px uzaklık */
+    right: 5px; /* Sağdan 20px uzaklık */
 }
 
 /* Sosyal medya simgeleri */
