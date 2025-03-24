@@ -68,6 +68,7 @@ body {
 }
 
 /* Footer Düzeni */
+/* Footer Düzeni */
 .footer {
     background-color: #1e1e1e; /* Arka plan rengi */
     color: white; /* Yazı rengi */
@@ -80,32 +81,46 @@ body {
     border-bottom-right-radius: 60px;
 }
 
-.footer p {
-    margin: 0; /* Paragrafın üst ve alt boşluğunu sıfırla */
-    font-size: 14px; /* Yazı boyutu */
-}
-
-.footer ul {
+/* Sosyal medya simgelerinin listesi */
+.footer .social-media {
     list-style: none; /* Liste işaretlerini kaldır */
-    margin: 0 0 10px 0; /* Üstten 10px boşluk */
     padding: 0;
+    margin: 0;
+    text-align: left; /* Sola hizala */
 }
 
-.footer ul li {
-    display: inline; /* Liste elemanlarını yan yana yerleştir */
-    margin: 0 15px; /* Her elemanın arasında boşluk bırak */
+.footer .social-media li {
+    display: inline-block; /* Simgeleri yatayda sıralar */
+    margin-right: 20px; /* Aralarına boşluk bırak */
 }
 
-.footer ul li a {
-    color: white; /* Yazı rengi */
+/* Sosyal medya simgeleri */
+.footer .social-media li a {
+    color: white; /* Başlangıçta beyaz renk */
+    font-size: 24px; /* Simgelerin boyutu */
     text-decoration: none; /* Alt çizgiyi kaldır */
-    transition: color 0.3s; /* Hover efekti */
+    transition: color 0.3s ease; /* Renk değişimi için geçiş efekti */
 }
 
-.footer ul li a:hover {
-    color: #3e3e3e; /* Hover efekti */
+/* Instagram Hover */
+.footer .social-media li a.instagram:hover {
+    color: #E4405F; /* Instagram'ın rengi */
 }
 
+/* Whatsapp Hover */
+.footer .social-media li a.whatsapp:hover {
+    color: #25D366; /* WhatsApp'ın rengi */
+}
+
+/* LinkedIn Hover */
+.footer .social-media li a.linkedin:hover {
+    color: #0A66C2; /* LinkedIn'in rengi */
+}
+
+/* Github Hover */
+.footer .social-media li a.github:hover {
+    color: #333; /* GitHub'ın rengi */
+}
 
 /* Sayfa İçeriği */
 h1 {
