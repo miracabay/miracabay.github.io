@@ -16,6 +16,7 @@ body {
     z-index: 1000; /* Üstte kalması için */
     height: 60px; /* Navbar yüksekliği */
     border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
 }
 
 .navbar ul {
