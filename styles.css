@@ -7,7 +7,7 @@ body {
 
 /* Navbar Düzeni */
 .navbar {
-    background-color: #333; /* Arka plan rengi */
+    background-color: #1e1e1e; /* Arka plan rengi */
     position: fixed; /* Sabit navbar */
     top: 0;
     width: 100%;
@@ -39,7 +39,6 @@ body {
 }
 
 .banner {
-    margin-top: 60px; /* Navbar'ın altından başlasın diye */
     text-align: center; /* Banner'ı ortalayalım */
 }
 
