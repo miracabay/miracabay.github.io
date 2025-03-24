@@ -46,12 +46,6 @@ body {
     border-radius: 30px;
 }
 
-.navbar ul li a:focus {
-    outline: none; /* Outline'ı kaldırıyoruz */
-    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.6); /* Küçük bir beyaz kenarlık */
-    border-radius: 30px; /* Yuvarlak köşeleri koruyoruz */
-}
-
 /* Banner Düzeni */
 .banner {
     text-align: center; /* Banner'ı ortalayalım */
