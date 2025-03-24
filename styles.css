@@ -87,7 +87,7 @@ body {
 
 .footer ul {
     list-style: none; /* Liste işaretlerini kaldır */
-    margin: 10px 0 0 0; /* Üstten 10px boşluk */
+    margin: 0 0 10px 0; /* Üstten 10px boşluk */
     padding: 0;
 }
 
