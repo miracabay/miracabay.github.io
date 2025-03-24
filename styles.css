@@ -50,7 +50,7 @@ body {
 /* Banner Düzeni */
 .banner {
     text-align: center; /* Banner'ı ortalayalım */
-    margin-top: 60px; /* Navbar'ın yüksekliğine göre margin ekliyoruz */
+    margin-top: 62px; /* Navbar'ın yüksekliğine göre margin ekliyoruz */
 }
 
 .banner img {
