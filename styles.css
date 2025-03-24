@@ -51,11 +51,15 @@ body {
 .banner {
     text-align: center; /* Banner'ı ortalayalım */
     margin-top: 61px; /* Navbar'ın yüksekliğine göre margin ekliyoruz */
+    width: 100%; /* Banner genişliği ekran genişliğine göre ayarlanır */
+    height: 400px; /* Banner yüksekliği sabit kalsın, istediğiniz yüksekliği ayarlayın */
+    overflow: hidden; /* Görüntü taşarsa gizler */
 }
 
 .banner img {
-    width: 100%; /* Görselin genişliğini ekran genişliğine göre ayarlıyoruz */
-    height: auto;
+    width: 100%; /* Görselin genişliği %100 olacak */
+    height: 100%; /* Görselin yüksekliği de %100 olacak */
+    object-fit: cover; /* Görselin orantısız şekilde büyüyüp alanı kaplamasını sağlar */
 }
 
 .visual-bar {
