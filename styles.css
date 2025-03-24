@@ -67,19 +67,20 @@ body {
     position: relative; /* Konumlandırma */
 }
 
-/* Footer Düzeni */
 .footer {
     background-color: #1e1e1e; /* Arka plan rengi */
     color: white; /* Yazı rengi */
-    padding: 15px 15px; /* Üst ve alt boşluk */
+    padding: 15px; /* Üst ve alt boşluk */
     position: fixed; /* Sayfa kaydırılsa da sabit kalır */
     bottom: 0; /* Alt kısma yerleştir */
     width: 100%; /* Ekran genişliğine göre genişlik */
     z-index: 1000; /* Navbar'dan üstte kalması için */
-    border-bottom-right-radius: 60px; /* Köşe yuvarlama */
+    border-bottom-right-radius: 0; /* Sağ alt köşe yuvarlamayı kaldır */
+    border-bottom-left-radius: 60px; /* Sol alt köşe yuvarlamayı bırak */
     display: flex; /* Flexbox ile yerleşim */
     justify-content: space-between; /* Sosyal medya simgeleri ve yazıyı ayırır */
     align-items: center; /* Yatayda ortala */
+    box-sizing: border-box; /* Kutunun boyutunu dahil et */
 }
 
 /* Footer içindeki metin */
@@ -98,6 +99,7 @@ body {
     display: flex; /* Simgeleri yatayda sıralar */
 }
 
+/* Sosyal medya simgeleri */
 .footer .social-media li {
     margin-right: 20px; /* Aralarına boşluk bırak */
 }
