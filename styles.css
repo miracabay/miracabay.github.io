@@ -66,6 +66,74 @@ body {
     border-bottom-left-radius: 60px; /* Aynı yuvarlak köşeler */
     position: relative; /* Konumlandırma */
 }
+/* Genel Sayfa Düzeni */
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
+body {
+    font-family: "Times New Roman", Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Border box ile her öğe daha düzenli olur */
+}
+
+/* Navbar Düzeni */
+.navbar {
+    background-color: #1e1e1e; /* Arka plan rengi */
+    position: fixed; /* Sabit navbar */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Üstte kalması için */
+    height: 60px; /* Navbar yüksekliği */
+    border-top-right-radius: 60px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Menü öğelerini dikeyde ortala */
+    height: 100%; /* Navbar yüksekliği kadar yer kapla */
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px 10px 15px;
+    display: block;
+    transition: background-color 0.3s, border-radius 0.3s; /* border-radius için de geçiş ekledik */
+    border-radius: 30px; /* Başlangıçta yuvarlak köşeler */
+    outline: none; /* Outline'ı kaldırıyoruz */
+}
+
+.navbar ul li a:hover {
+    background-color: #3e3e3e; /* Hover efekti */
+    border-radius: 30px;
+}
+
+/* Banner Düzeni */
+.banner {
+    text-align: center; /* Banner'ı ortalayalım */
+    margin-top: 61px; /* Navbar'ın yüksekliğine göre margin ekliyoruz */
+}
+
+.banner img {
+    width: 100%; /* Görselin genişliğini ekran genişliğine göre ayarlıyoruz */
+    height: auto;
+}
+
+.visual-bar {
+    margin-top: -3px;
+    background-color: #1e1e1e; /* Navbar ile aynı arka plan rengi */
+    height: 60px; /* Navbar yüksekliği ile aynı */
+    width: 100%; /* Ekran genişliği kadar */
+    border-bottom-left-radius: 60px; /* Aynı yuvarlak köşeler */
+    position: relative; /* Konumlandırma */
+}
 
 /* Footer Düzeni */
 .footer {
@@ -76,12 +144,11 @@ body {
     bottom: 0; /* Alt kısma yerleştir */
     width: 100%; /* Ekran genişliğine göre genişlik */
     z-index: 1000; /* Navbar'dan üstte kalması için */
-    border-bottom-right-radius: 0; /* Sağ alt köşe yuvarlamayı kaldır */
     border-bottom-left-radius: 60px; /* Sol alt köşe yuvarlamayı bırak */
+    border-bottom-right-radius: 0; /* Sağ alt köşe yuvarlamayı kaldır */
     display: flex; /* Flexbox ile yerleşim */
     justify-content: space-between; /* Sosyal medya simgeleri sağda, yazı ortada */
     align-items: center; /* Yatayda ortala */
-    box-sizing: border-box; /* Kutunun boyutunu dahil et */
 }
 
 /* Footer içindeki metin */
@@ -98,6 +165,7 @@ body {
     padding: 0;
     margin: 0;
     display: flex; /* Simgeleri yatayda sıralar */
+    margin-left: auto; /* Sosyal medya simgelerinin sola dayalı olmaması için */
 }
 
 /* Sosyal medya simgeleri */
@@ -137,6 +205,18 @@ body {
 .footer .social-media li a.twitter:hover {
     color: #1DA1F2; /* Twitter'ın rengi */
 }
+
+/* Sayfa İçeriği */
+h1 {
+    text-align: center;
+    font-family: 'Clicker Script', cursive;
+}
+
+p {
+    text-align: center;
+    margin-top: 30px;
+}
+
 
 /* Sayfa İçeriği */
 h1 {
