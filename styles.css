@@ -79,7 +79,7 @@ h2 {
     white-space: pre;
     margin: -10; /* Üst ve alt margin'i sıfırlar */
     padding: -10; /* İç boşluğu sıfırlar */
-    line-height: 1; /* Satır yüksekliğini küçültür, normalde 1.5 gibi bir de
+    line-height: 1;
 }
 
 p {
