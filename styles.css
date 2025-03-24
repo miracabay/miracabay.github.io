@@ -24,6 +24,7 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
+    border-radius: 30px;
     align-items: center; /* Menü öğelerini dikeyde ortala */
     height: 100%; /* Navbar yüksekliği kadar yer kapla */
 }
