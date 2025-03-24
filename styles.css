@@ -71,7 +71,7 @@ body {
 .footer {
     background-color: #1e1e1e; /* Arka plan rengi */
     color: white; /* Yazı rengi */
-    padding: 20px 0; /* Üst ve alt boşluk */
+    padding: 15px 15px; /* Üst ve alt boşluk */
     position: fixed; /* Sayfa kaydırılsa da sabit kalır */
     bottom: 0; /* Alt kısma yerleştir */
     width: 100%; /* Ekran genişliğine göre genişlik */
