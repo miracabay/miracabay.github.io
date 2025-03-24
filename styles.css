@@ -58,6 +58,14 @@ body {
     height: auto; /* Yüksekliği orantılı şekilde ayarlıyoruz */
 }
 
+.visual-bar {
+    background-color: #1e1e1e; /* Navbar ile aynı arka plan rengi */
+    height: 60px; /* Navbar yüksekliği ile aynı */
+    width: 100%; /* Ekran genişliği kadar */
+    border-top-right-radius: 60px; /* Aynı yuvarlak köşeler */
+    position: relative; /* Konumlandırma */
+}
+
 /* Sayfa İçeriği */
 h1 {
     text-align: center;
