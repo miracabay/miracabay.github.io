@@ -55,7 +55,8 @@ body {
 
 .banner img {
     width: 100%; /* Görselin genişliğini ekran genişliğine göre ayarlıyoruz */
-    height: 20%; /* Yüksekliği orantılı şekilde ayarlıyoruz */
+    height: auto;
+    transform: scaleY(0.5);/* Yüksekliği orantılı şekilde ayarlıyoruz */
 }
 
 .visual-bar {
