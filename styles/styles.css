@@ -18,6 +18,18 @@ body {
     border-top-right-radius: 60px;
 }
 
+/* Çizgiyi tıklanamaz yapmak ve hover efektini engellemek */
+.navbar a.separator {
+    pointer-events: none;       /* Bağlantının varsayılan rengini kullanarak stilini korur */
+    text-decoration: none; /* Alt çizgi olmaması için */
+}
+
+.navbar a.separator:hover {
+    /* Hover durumunda da herhangi bir değişiklik olmasın */
+    text-decoration: none;
+}
+
+
 .navbar ul {
     list-style: none;
     margin: 0;
@@ -44,7 +56,6 @@ body {
 
 .navbar ul li a:hover {
     background-color: #3e3e3e; /* Hover efekti */
-    border-radius: 30px;
 }
 
 /* Banner Düzeni */
@@ -60,14 +71,6 @@ body {
     height: 100%;
 }
 
-.visual-bar {
-    margin-top: -3px;
-    background-color: #1e1e1e; /* Navbar ile aynı arka plan rengi */
-    height: 60px; /* Navbar yüksekliği ile aynı */
-    width: 100%; /* Ekran genişliği kadar */
-    border-bottom-left-radius: 60px; /* Aynı yuvarlak köşeler */
-    position: relative; /* Konumlandırma */
-}
 /* Footer Düzeni */
 .footer {
     background-color: #1e1e1e; /* Arka plan rengi */
@@ -88,10 +91,11 @@ body {
 
 /* Footer içindeki metin */
 .footer p {
-    margin: 0; /* Paragrafın üst ve alt boşluğunu sıfırla */
+    margin: 3px 0 0 0; /* Paragrafın üst ve alt boşluğunu sıfırla */
     font-size: 14px; /* Yazı boyutu */
     text-align: center; /* Yazıyı ortala */
     flex-grow: 1; /* Ortadaki yazının büyümesini sağlar */
+    font-size: 14px;
 }
 
 /* Sosyal medya simgelerinin listesi */
