@@ -1,5 +1,16 @@
 /* Genel Sayfa Düzeni */
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
+
+/* Sayfa içeriklerinin başlangıç durumu */
+.page-content {
+    display: none; /* Başlangıçta tüm içerikler gizli */
+}
+
+/* Ana sayfa ilk olarak görülebilir olmalı */
+#home {
+    display: block;
+}
+
 body {
     font-family: "Times New Roman", Times, serif;
     margin: 0;
@@ -11,28 +22,6 @@ body {
 @keyframes slideLeft {
     from { transform: translateX(-100%); opacity: 0; }
     to { transform: translateX(0); opacity: 1; }
-}
-
-.current-page {
-    pointer-events: none; /* Tıklanamaz yap */
-    color: white; /* Renk diğerleriyle aynı kalsın */
-    position: relative; /* Alt çizgi için konumlandırma */
-}
-
-.current-page::after {
-    content: ""; 
-    position: absolute;
-    left: 50%;
-    bottom: 1px; /* Çizginin mesafesi */
-    width: 60%; /* Çizginin uzunluğu */
-    height: 2px; /* Çizginin kalınlığı */
-    background-color: #ffffff; /* Çizginin rengi */
-    transform: translateX(-50%); /* Ortalamak için */
-    border-radius: 2px; /* Hafif yuvarlatma */
-}
-
-.current-page:hover {
-    background-color: transparent !important; /* Hover efektini kaldır */
 }
 
 /* Navbar */
@@ -58,7 +47,7 @@ body {
 }
 
 .navbar ul li {
-    margin: 0 15x;
+    margin: 0 15px;
 }
 
 .navbar ul li .separator {
@@ -67,7 +56,29 @@ body {
     font-weight: bold;
 }
 
+/* Sayfa İçeriği Geçişi */
+.page-content {
+    display: none;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
 
+.page-content.active {
+    display: block;
+    opacity: 1;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Navbar Linkleri Animasyonu */
 @keyframes slideDown {
     from { transform: translateY(-100%); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
@@ -88,16 +99,8 @@ body {
     background-color: #3e3e3e;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-h1 {
+/* Header */
+h2 {
     color: #1e1e1e;
     position: absolute; /* Konumlandırma */
     top: 30%; /* Sayfa yüksekliğinin yarısı */
@@ -145,6 +148,7 @@ h1 {
     to { transform: translateY(0); opacity: 1; }
 }
 
+/* Sosyal Medya */
 .footer .social-media {
     list-style: none;
     display: flex;
@@ -156,7 +160,7 @@ h1 {
     right: 20px;
     opacity: 0;
     animation: fadeIn 2.25s forwards 1.5s;
-    z-index: 9999;  /* Bu, sosyal medya simgelerinin diğer öğelerin üstünde olmasını sağlar */
+    z-index: 9999;
 }
 
 .footer .social-media li a {
@@ -176,12 +180,6 @@ h1 {
 
 /* Mobil Uyum (768px Altı) */
 @media (max-width: 800px) {
-
-    .current-page::after {
-        bottom: -5px; /* Çizginin mesafesi */
-        height: 1px; /* Çizginin kalınlığı */
-    }
-    
     .navbar ul li {
         margin: 0;
     }

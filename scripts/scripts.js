@@ -5,14 +5,23 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(data => {
             document.getElementById("navbar-container").innerHTML = data;
 
-            // Aktif sayfa linkine `current-page` sınıfını ekle
-            const currentPage = window.location.pathname.split("/").pop(); // Şu anki sayfa adını al
-            const navLinks = document.querySelectorAll(".navbar a"); // Navbar'daki tüm linkleri al
+            // Navbar tıklama işlemleri
+            const navbarLinks = document.querySelectorAll(".navbar ul li a");
+            navbarLinks.forEach(link => {
+                link.addEventListener("click", function(event) {
+                    event.preventDefault(); // Bağlantıyı tıklama yerine JS ile işlem yap
+                    const targetId = link.getAttribute("href").substring(1); // #home gibi
 
-            navLinks.forEach(link => {
-                if (link.getAttribute("href") === currentPage) {
-                    link.classList.add("current-page"); // Eğer şu anki sayfa linki ile eşleşiyorsa `current-page` ekle
-                }
+                    // Sayfa içeriklerini gizle
+                    const allPages = document.querySelectorAll(".page-content");
+                    allPages.forEach(page => page.style.display = "none");
+
+                    // Tıklanan sayfayı göster
+                    const targetPage = document.getElementById(targetId);
+                    if (targetPage) {
+                        targetPage.style.display = "block";
+                    }
+                });
             });
         });
 
@@ -21,4 +30,17 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(data => {
             document.getElementById("footer-container").innerHTML = data;
         });
+
+    // Sayfa yüklendiğinde ilk içeriği göster (home sayfası)
+    document.getElementById("home").style.display = "block";
+
+    // Sayfaların dışarıdan çekileceği kısımlar
+    const pages = ["home","whoAmI", "myProjects", "contact", "invincibleXOX"];
+    pages.forEach(pageId => {
+        fetch(`/pages/${pageId}.html`)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById(pageId).innerHTML = data;
+            });
+    });
 });
