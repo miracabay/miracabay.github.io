@@ -39,6 +39,11 @@ body {
     margin: 0 15px;
 }
 
+@keyframes slideDown {
+    from { transform: translateY(-100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
 .navbar ul li a {
     color: white;
     text-decoration: none;
@@ -46,6 +51,8 @@ body {
     display: block;
     border-radius: 30px;
     transition: background-color 0.3s, border-radius 0.3s;
+    opacity: 0;
+    animation: slideDown 1.5s forwards 0.50s;
 }
 
 .navbar ul li a:hover {
@@ -87,18 +94,13 @@ body {
 h1 {
     color: #1e1e1e;
     position: absolute; /* Konumlandırma */
-    top: 50%; /* Sayfa yüksekliğinin yarısı */
+    top: 30%; /* Sayfa yüksekliğinin yarısı */
     left: 50%; /* Sayfa genişliğinin yarısı */
     transform: translate(-50%, -50%); /* Kendi genişlik ve yüksekliğini dikkate alarak tam ortalama */
     font-family: 'Clicker Script', cursive;
     text-align: center;
     opacity: 0;
-    animation: fadeIn 1.5s forwards 0.75s;
-}
-
-p {
-    text-align: center;
-    margin-top: 30px;
+    animation: fadeIn 2.25s forwards 1.5s;
 }
 
 /* Footer Animasyonu */
@@ -128,9 +130,15 @@ p {
     font-size: 14px;
     text-align: center;
     flex-grow: 1;
+    opacity: 0;
+    animation: slideUp 1.5s forwards 0.50s;
 }
 
-/* Sosyal Medya Simgeleri */
+@keyframes slideUp {
+    from { transform: translateY(100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
 .footer .social-media {
     list-style: none;
     display: flex;
@@ -140,6 +148,9 @@ p {
     margin: 0;
     padding: 0;
     right: 20px;
+    opacity: 0;
+    animation: fadeIn 2.25s forwards 1.5s;
+    z-index: 9999;  /* Bu, sosyal medya simgelerinin diğer öğelerin üstünde olmasını sağlar */
 }
 
 .footer .social-media li a {
@@ -147,17 +158,27 @@ p {
     font-size: 24px;
     text-decoration: none;
     transition: color 0.3s ease;
+    display: block; /* Tüm simgeyi tıklanabilir yapmak için */
 }
 
 /* Sosyal Medya Hover Renkleri */
 .footer .social-media li a.instagram:hover { color: #E4405F; }
-.footer .social-media li a.whatsapp:hover { color: #25D366; }
 .footer .social-media li a.linkedin:hover { color: #0A66C2; }
+.footer .social-media li a.youtube:hover { color: #FF0000; }
 .footer .social-media li a.github:hover { color: #333; }
 .footer .social-media li a.twitter:hover { color: #1DA1F2; }
 
 /* Mobil Uyum (768px Altı) */
 @media (max-width: 768px) {
+
+    .navbar ul li {
+        margin: 0;
+    }
+
+    .navbar ul li a {
+        padding: 0 13px;
+        font-size: 10px;
+    }
 
     .footer p {
         font-size: 10px;
