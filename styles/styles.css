@@ -4,44 +4,26 @@ body {
     font-family: "Times New Roman", Times, serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Border box ile her öğe daha düzenli olur */
+    box-sizing: border-box;
 }
 
+/* Navbar Animasyonu */
 @keyframes slideLeft {
-    from {
-        transform: translateX(-100%); /* Navbar soldan başlar */
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0); /* Normal pozisyona gelir */
-        opacity: 1;
-    }
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
 }
 
-/* Navbar Düzeni */
+/* Navbar */
 .navbar {
-    background-color: #1e1e1e; /* Arka plan rengi */
-    position: fixed; /* Sabit navbar */
+    background-color: #1e1e1e;
+    position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000; /* Üstte kalması için */
-    height: 60px; /* Navbar yüksekliği */
-    border-top-right-radius: 60px;
+    height: 60px;
     z-index: 1000;
+    border-top-right-radius: 60px;
     animation: slideLeft 0.75s ease-out forwards;
 }
-
-/* Çizgiyi tıklanamaz yapmak ve hover efektini engellemek */
-.navbar a.separator {
-    pointer-events: none;       /* Bağlantının varsayılan rengini kullanarak stilini korur */
-    text-decoration: none; /* Alt çizgi olmaması için */
-}
-
-.navbar a.separator:hover {
-    /* Hover durumunda da herhangi bir değişiklik olmasın */
-    text-decoration: none;
-}
-
 
 .navbar ul {
     list-style: none;
@@ -49,8 +31,8 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center; /* Menü öğelerini dikeyde ortala */
-    height: 100%; /* Navbar yüksekliği kadar yer kapla */
+    align-items: center;
+    height: 100%;
 }
 
 .navbar ul li {
@@ -60,129 +42,39 @@ body {
 .navbar ul li a {
     color: white;
     text-decoration: none;
-    padding: 10px 15px 10px 15px;
+    padding: 10px 15px;
     display: block;
-    transition: background-color 0.3s, border-radius 0.3s; /* border-radius için de geçiş ekledik */
-    border-radius: 30px; /* Başlangıçta yuvarlak köşeler */
-    outline: none; /* Outline'ı kaldırıyoruz */
+    border-radius: 30px;
+    transition: background-color 0.3s, border-radius 0.3s;
 }
 
 .navbar ul li a:hover {
-    background-color: #3e3e3e; /* Hover efekti */
+    background-color: #3e3e3e;
 }
 
+/* Banner */
 .banner-wrapper {
     margin-top: 61px;
     background-color: #1e1e1e;
+    display: flex;
     justify-content: center;
     width: 100%;
 }
 
-/* Banner Düzeni */
 .banner {
-    margin-top: 61px;
     max-width: 1200px;
-    width: 100%; /* Genişliği her zaman korur */
+    width: 100%;
     display: flex;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 
 .banner img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Görüntüyü orantılı kırpmadan doldur */
+    object-fit: cover;
 }
 
-@keyframes slideRight {
-    from {
-        transform: translateX(100%); /* footer soldan başlar */
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0); /* footer pozisyona gelir */
-        opacity: 1;
-    }
-}
-
-/* Footer Düzeni */
-.footer {
-    background-color: #1e1e1e; /* Arka plan rengi */
-    color: white; /* Yazı rengi */
-    padding: 15px; /* Üst ve alt boşluk */
-    position: fixed; /* Sayfa kaydırılsa da sabit kalır */
-    bottom: 0; /* Alt kısma yerleştir */
-    width: 100%; /* Ekran genişliğine göre genişlik */
-    border-bottom-left-radius: 60px; /* Sol alt köşe yuvarlamayı bırak */
-    border-bottom-right-radius: 0; /* Sağ alt köşe yuvarlamayı kaldır */
-    display: flex; /* Flexbox ile yerleşim */
-    justify-content: center; /* Her şeyin ortalanması */
-    align-items: center; /* Yatayda ortala */
-    box-sizing: border-box; /* Kutunun boyutunu dahil et */
-    height: 60px;
-    z-index: 999;
-    animation: slideRight 0.75s ease-out forwards;
-}
-
-/* Footer içindeki metin */
-.footer p {
-    margin: 3px 0 0 0; /* Paragrafın üst ve alt boşluğunu sıfırla */
-    font-size: 14px; /* Yazı boyutu */
-    text-align: center; /* Yazıyı ortala */
-    flex-grow: 1; /* Ortadaki yazının büyümesini sağlar */
-    font-size: 14px;
-}
-
-/* Sosyal medya simgelerinin listesi */
-.footer .social-media {
-    list-style: none; /* Liste işaretlerini kaldır */
-    padding: 0;
-    margin: 5px 0 0 0;
-    display: flex; /* Simgeleri yatayda sıralar */
-    position: absolute; /* Sağ tarafa yerleştirmek için absolute konumlandırma */
-    right: 0px; /* Sağdan 20px uzaklık */
-}
-
-/* Sosyal medya simgeleri */
-.footer .social-media li {
-    margin-right: 20px; /* Aralarına boşluk bırak */
-}
-
-/* Sosyal medya simgeleri */
-.footer .social-media li a {
-    color: white; /* Başlangıçta beyaz renk */
-    font-size: 24px; /* Simgelerin boyutu */
-    text-decoration: none; /* Alt çizgiyi kaldır */
-    transition: color 0.3s ease; /* Renk değişimi için geçiş efekti */
-}
-
-/* Instagram Hover */
-.footer .social-media li a.instagram:hover {
-    color: #E4405F; /* Instagram'ın rengi */
-}
-
-/* Whatsapp Hover */
-.footer .social-media li a.whatsapp:hover {
-    color: #25D366; /* WhatsApp'ın rengi */
-}
-
-/* LinkedIn Hover */
-.footer .social-media li a.linkedin:hover {
-    color: #0A66C2; /* LinkedIn'in rengi */
-}
-
-/* GitHub Hover */
-.footer .social-media li a.github:hover {
-    color: #333; /* GitHub'ın rengi */
-}
-
-/* Twitter Hover */
-.footer .social-media li a.twitter:hover {
-    color: #1DA1F2; /* Twitter'ın rengi */
-}
-
-/* Sayfa İçeriği */
 h1 {
     position: absolute; /* Konumlandırma */
     top: 50%; /* Sayfa yüksekliğinin yarısı */
@@ -194,16 +86,88 @@ h1 {
     animation: fadeIn 1.5s forwards 0.75s;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
 p {
     text-align: center;
     margin-top: 30px;
+}
+
+/* Footer Animasyonu */
+@keyframes slideRight {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+/* Footer */
+.footer {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 60px;
+    animation: slideRight 0.75s ease-out forwards;
+}
+
+/* Footer Metni */
+.footer p {
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+/* Sosyal Medya Simgeleri */
+.footer .social-media {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    right: 50px;
+}
+
+.footer .social-media li a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Sosyal Medya Hover Renkleri */
+.footer .social-media li a.instagram:hover { color: #E4405F; }
+.footer .social-media li a.whatsapp:hover { color: #25D366; }
+.footer .social-media li a.linkedin:hover { color: #0A66C2; }
+.footer .social-media li a.github:hover { color: #333; }
+.footer .social-media li a.twitter:hover { color: #1DA1F2; }
+
+/* Mobil Uyum (768px Altı) */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .footer p {
+        font-size: 12px;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .footer .social-media {
+        justify-content: center; /* Mobilde ortaya hizala */
+        width: 100%;
+        right: auto;
+    }
+
+    .footer .social-media li a {
+        font-size: 20px;
+    }
 }
