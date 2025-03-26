@@ -59,16 +59,21 @@ body {
     background-color: #3e3e3e; /* Hover efekti */
 }
 
+.banner-wrapper {
+    margin-top: 61px;
+    background-color: #1e1e1e;
+    justify-content: center;
+    width: 100%;
+}
 /* Banner Düzeni */
 .banner {
     margin-top: 61px;
-    width: 100vw; /* Tam ekran genişliği */
-    height: 40vh; /* Ekranın %50'ı kadar yükseklik */
-    min-height: 250px; /* Çok küçük ekranlarda banner kaybolmasın */
-    max-height: 500px; /* Çok büyük olmasın */
+    max-width: 1200px;
+    width: 100%; /* Genişliği her zaman korur */
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .banner img {
