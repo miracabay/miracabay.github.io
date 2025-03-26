@@ -7,6 +7,17 @@ body {
     box-sizing: border-box; /* Border box ile her öğe daha düzenli olur */
 }
 
+@keyframes slideLeft {
+    from {
+        transform: translateX(-100%); /* Navbar soldan başlar */
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0); /* Normal pozisyona gelir */
+        opacity: 1;
+    }
+}
+
 /* Navbar Düzeni */
 .navbar {
     background-color: #1e1e1e; /* Arka plan rengi */
@@ -17,6 +28,7 @@ body {
     height: 60px; /* Navbar yüksekliği */
     border-top-right-radius: 60px;
     z-index: 1000;
+    animation: slideLeft 0.75s ease-out forwards;
 }
 
 /* Çizgiyi tıklanamaz yapmak ve hover efektini engellemek */
@@ -65,6 +77,7 @@ body {
     justify-content: center;
     width: 100%;
 }
+
 /* Banner Düzeni */
 .banner {
     margin-top: 61px;
@@ -80,6 +93,17 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover; /* Görüntüyü orantılı kırpmadan doldur */
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(100%); /* footer soldan başlar */
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0); /* footer pozisyona gelir */
+        opacity: 1;
+    }
 }
 
 /* Footer Düzeni */
@@ -98,6 +122,7 @@ body {
     box-sizing: border-box; /* Kutunun boyutunu dahil et */
     height: 60px;
     z-index: 999;
+    animation: slideRight 0.75s ease-out forwards;
 }
 
 /* Footer içindeki metin */
@@ -159,9 +184,23 @@ body {
 
 /* Sayfa İçeriği */
 h1 {
-    text-align: center;
-    margin-top: 30px;
+    position: absolute; /* Konumlandırma */
+    top: 50%; /* Sayfa yüksekliğinin yarısı */
+    left: 50%; /* Sayfa genişliğinin yarısı */
+    transform: translate(-50%, -50%); /* Kendi genişlik ve yüksekliğini dikkate alarak tam ortalama */
     font-family: 'Clicker Script', cursive;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards 0.75s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 p {
