@@ -31,9 +31,10 @@ body {
     animation: slideLeft 1s ease-out forwards;
 }
 
-.navbar a:focus {
-    outline: none;  /* Focus çerçevesini kaldır */
-    box-shadow: none; /* Eğer shadow varsa kaldır */
+.navbar a:focus,
+.navbar a:active {
+    outline: none;
+    background: none !important;
 }
 
 .navbar ul {
