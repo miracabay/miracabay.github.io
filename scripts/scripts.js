@@ -16,6 +16,9 @@ document.addEventListener("DOMContentLoaded", function () {
                     const allPages = document.querySelectorAll(".page-content");
                     allPages.forEach(page => page.style.display = "none");
 
+                    // "Miraç Abay" başlığını gizle
+                    document.getElementById("main").style.display = "none";
+
                     // Tıklanan sayfayı göster
                     const targetPage = document.getElementById(targetId);
                     if (targetPage) {
@@ -31,11 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("footer-container").innerHTML = data;
         });
 
-    // Sayfa yüklendiğinde ilk içeriği göster (home sayfası)
-    document.getElementById("home").style.display = "block";
-
     // Sayfaların dışarıdan çekileceği kısımlar
-    const pages = ["home","whoAmI", "myProjects", "contact", "invincibleXOX"];
+    const pages = ["home", "whoAmI", "myProjects", "contact", "invincibleXOX"];
     pages.forEach(pageId => {
         fetch(`/pages/${pageId}.html`)
             .then(response => response.text())

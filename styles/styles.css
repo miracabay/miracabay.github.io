@@ -6,11 +6,6 @@
     display: none; /* Başlangıçta tüm içerikler gizli */
 }
 
-/* Ana sayfa ilk olarak görülebilir olmalı */
-#home {
-    display: block;
-}
-
 body {
     font-family: "Times New Roman", Times, serif;
     margin: 0;
