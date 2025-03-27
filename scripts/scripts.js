@@ -1,5 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Navbar ve Footer'ı yükle
+    // Footer'ı yükle (Hep görünsün)
+    fetch("/layout/footer.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("footer-container").innerHTML = data;
+        });
+
+    // Navbar'ı yükle
     fetch("/layout/navbar.html")
         .then(response => response.text())
         .then(data => {
@@ -8,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // Navbar tıklama işlemleri
             const navbarLinks = document.querySelectorAll(".navbar ul li a");
             navbarLinks.forEach(link => {
-                link.addEventListener("click", function(event) {
+                link.addEventListener("click", function (event) {
                     event.preventDefault(); // Bağlantıyı tıklama yerine JS ile işlem yap
                     const targetId = link.getAttribute("href").substring(1); // #home gibi
 
@@ -24,14 +31,15 @@ document.addEventListener("DOMContentLoaded", function () {
                     if (targetPage) {
                         targetPage.style.display = "block";
                     }
+
+                    // Footer'ı tekrar yükle ki silinmesin
+                    fetch("/layout/footer.html")
+                        .then(response => response.text())
+                        .then(data => {
+                            document.getElementById("footer-container").innerHTML = data;
+                        });
                 });
             });
-        });
-
-    fetch("/layout/footer.html")
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("footer-container").innerHTML = data;
         });
 
     // Sayfaların dışarıdan çekileceği kısımlar
