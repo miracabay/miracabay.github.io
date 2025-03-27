@@ -28,7 +28,7 @@ body {
     height: 60px;
     z-index: 1000;
     border-top-right-radius: 60px;
-    animation: slideLeft 0.75s ease-out forwards;
+    animation: slideLeft 1s ease-out forwards;
 }
 
 .navbar ul {
@@ -94,7 +94,7 @@ body {
     border-radius: 30px;
     transition: background-color 0.3s, border-radius 0.3s;
     opacity: 0;
-    animation: slideDown 1.5s forwards 0.50s;
+    animation: slideDown 1.75s forwards 0.75s;
 }
 
 .navbar ul li a.active {
@@ -134,6 +134,18 @@ h2 {
     animation: fadeIn 2.25s forwards 1.5s;
 }
 
+h3 {
+    color: #1e1e1e;
+    position: absolute; /* Konumlandırma */
+    top: 30%; /* Sayfa yüksekliğinin yarısı */
+    left: 50%; /* Sayfa genişliğinin yarısı */
+    transform: translate(-50%, -50%); /* Kendi genişlik ve yüksekliğini dikkate alarak tam ortalama */
+    font-family: 'Clicker Script', cursive;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 0.75s forwards;
+}
+
 /* Footer Animasyonu */
 @keyframes slideRight {
     from { transform: translateX(100%); opacity: 0; }
@@ -152,7 +164,7 @@ h2 {
     justify-content: center;
     align-items: center;
     border-bottom-left-radius: 60px;
-    animation: slideRight 0.75s ease-out forwards;
+    animation: slideRight 1s ease-out forwards;
 }
 
 /* Footer Metni */
@@ -162,7 +174,7 @@ h2 {
     text-align: center;
     flex-grow: 1;
     opacity: 0;
-    animation: slideUp 1.5s forwards 0.50s;
+    animation: slideUp 1.75s forwards 0.75s;
 }
 
 @keyframes slideUp {
