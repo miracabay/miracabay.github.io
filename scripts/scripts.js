@@ -12,18 +12,15 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(data => {
             document.getElementById("navbar-container").innerHTML = data;
 
-            // Navbar tıklama işlemleri
             const navbarLinks = document.querySelectorAll(".navbar ul li a");
+
             navbarLinks.forEach(link => {
                 link.addEventListener("click", function (event) {
-                    event.preventDefault(); // Bağlantıyı tıklama yerine JS ile işlem yap
+                    event.preventDefault(); // Sayfa değişimi JS ile olacak
                     const targetId = link.getAttribute("href").substring(1); // #home gibi
 
                     // Sayfa içeriklerini gizle
-                    const allPages = document.querySelectorAll(".page-content");
-                    allPages.forEach(page => page.style.display = "none");
-
-                    // "Miraç Abay" başlığını gizle
+                    document.querySelectorAll(".page-content").forEach(page => page.style.display = "none");
                     document.getElementById("main").style.display = "none";
 
                     // Tıklanan sayfayı göster
@@ -31,6 +28,14 @@ document.addEventListener("DOMContentLoaded", function () {
                     if (targetPage) {
                         targetPage.style.display = "block";
                     }
+
+                    // Navbar'daki aktif linki güncelle
+                    navbarLinks.forEach(nav => nav.classList.remove("active"));
+                    link.classList.add("active");
+                    
+                    // Tıklanamaz yap
+                    navbarLinks.forEach(nav => nav.style.pointerEvents = "auto"); // Önce hepsini aç
+                    link.style.pointerEvents = "none"; // Aktif olana tıklamayı engelle
 
                     // Footer'ı tekrar yükle ki silinmesin
                     fetch("/layout/footer.html")

@@ -45,10 +45,17 @@ body {
     margin: 0 15px;
 }
 
-.navbar ul li .separator {
-    pointer-events: none;
-    color: white; /* Yazı rengini koru */
+.navbar ul li a.separator {
+    pointer-events: none; /* Tıklanamaz yap */
+    color: #ffffff; /* Separator rengi (isteğe bağlı) */
     font-weight: bold;
+    cursor: default; /* El simgesi çıkmasın */
+    text-decoration: none; /* Alt çizgi olmasın */
+}
+
+.navbar ul li a.separator:hover {
+    background: none;
+    color: #ffffff; /* Hover olsa bile değişmemesi için */
 }
 
 /* Sayfa İçeriği Geçişi */
@@ -88,6 +95,26 @@ body {
     transition: background-color 0.3s, border-radius 0.3s;
     opacity: 0;
     animation: slideDown 1.5s forwards 0.50s;
+}
+
+.navbar ul li a.active {
+    position: relative;
+    font-weight: bold;
+    color: #ffffff; /* Aktif sayfa rengi */
+    pointer-events: none; /* Tıklanamaz yap */
+}
+
+/* Altına özel bir çizgi ekleyelim */
+.navbar ul li a.active::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -1px; /* Çizgi biraz aşağıda olsun */
+    width: 50%;
+    height: 4px;
+    background-color: #ffffff;
+    border-radius: 5px; /* Hafif oval köşeler */
+    transform: translateX(-50%); /* Ortalamak için */
 }
 
 .navbar ul li a:hover {
@@ -182,6 +209,10 @@ h2 {
     .navbar ul li a {
         padding: 5px 8px;
         font-size: 10px;
+    }
+
+    .navbar ul li a.active::after {
+        bottom: -2px; /* Çizgi biraz aşağıda olsun */
     }
 
     .footer p {
