@@ -1,28 +1,34 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", async function () {
     // Footer'ı yükle (Hep görünsün)
-    fetch("/layout/footer.html")
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("footer-container").innerHTML = data;
-        });
+    try {
+        const footerResponse = await fetch("/layout/footer.html");
+        const footerData = await footerResponse.text();
+        document.getElementById("footer-container").innerHTML = footerData;
+    } catch (error) {
+        console.error("Footer yüklenirken hata oluştu:", error);
+    }
 
     // Navbar'ı yükle
-    fetch("/layout/navbar.html")
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("navbar-container").innerHTML = data;
-            setupNavbar(); // Navbar yüklenince eventleri tanımla
-        });
+    try {
+        const navbarResponse = await fetch("/layout/navbar.html");
+        const navbarData = await navbarResponse.text();
+        document.getElementById("navbar-container").innerHTML = navbarData;
+        setupNavbar(); // Navbar yüklenince eventleri tanımla
+    } catch (error) {
+        console.error("Navbar yüklenirken hata oluştu:", error);
+    }
 
     // Sayfaların dışarıdan çekileceği kısımlar
     const pages = ["home", "whoAmI", "myProjects", "contact", "invincibleXOX"];
-    pages.forEach(pageId => {
-        fetch(`/pages/${pageId}.html`)
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById(pageId).innerHTML = data;
-            });
-    });
+    for (let pageId of pages) {
+        try {
+            const pageResponse = await fetch(`/pages/${pageId}.html`);
+            const pageData = await pageResponse.text();
+            document.getElementById(pageId).innerHTML = pageData;
+        } catch (error) {
+            console.error(`${pageId} sayfası yüklenirken hata oluştu:`, error);
+        }
+    }
 
     // İlk yüklemede sadece "home" göster, ama URL değiştirme
     document.getElementById("home").style.display = "block";
