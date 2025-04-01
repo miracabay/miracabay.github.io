@@ -32,6 +32,15 @@ body {
     animation: slideLeft 0.75s ease-out forwards;
 }
 
+.navbar-logo {
+    height: 60px; /* Logo boyutunu ayarlayın */
+    width: auto; /* Orantılı genişlik */
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .navbar a:focus,
 .navbar a:active {
     outline: none;
@@ -199,11 +208,35 @@ h3 {
 .footer .social-media li a.instagram:hover { color: #E4405F; }
 .footer .social-media li a.linkedin:hover { color: #0A66C2; }
 .footer .social-media li a.youtube:hover { color: #FF0000; }
-.footer .social-media li a.github:hover { color: #333; }
+.footer .social-media li a.github:hover { color: #A9A9A9; }
 .footer .social-media li a.twitter:hover { color: #1DA1F2; }
+
+/* Sosyal Medya Hover Renkleri */
+.footer .social-media li a.instagram:hover {
+    color: #E4405F;
+    filter: drop-shadow(0px 0px 10px rgba(228, 64, 95)); /* Instagram için renkli gölge */
+}
+.footer .social-media li a.linkedin:hover {
+    filter: drop-shadow(0px 0px 10px rgba(10, 102, 194)); /* LinkedIn için renkli gölge */
+}
+.footer .social-media li a.youtube:hover {
+    filter: drop-shadow(0px 0px 10px rgba(255, 0, 0)); /* YouTube için kırmızı gölge */
+}
+.footer .social-media li a.github:hover {
+    filter: drop-shadow(0px 0px 10px rgba(169, 169, 169)); /* GitHub için koyu gri gölge */
+}
+.footer .social-media li a.twitter:hover {
+    filter: drop-shadow(0px 0px 10px rgba(29, 161, 242)); /* Twitter için mavi gölge */
+}
+
 
 /* Mobil Uyum (768px Altı) */
 @media (max-width: 800px) {
+
+    .navbar-logo {
+        height: 40px;
+    }
+
     .navbar ul li {
         margin: 0;
     }
