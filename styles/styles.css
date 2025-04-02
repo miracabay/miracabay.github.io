@@ -50,6 +50,7 @@ body {
     transform: translateY(-50%);
     opacity: 0;
     animation: fadeIn 2.25s forwards 1.5s;
+    margin-left: 10px;
 }
 
 
@@ -248,11 +249,12 @@ h3 {
 @media (max-width: 800px) {
 
     .navbar-logo {
-        height: 50px;
-        width: 50px;
+        height: 40px;
+        width: 40px;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
+        margin-left: 5px;
     }
 
     .navbar ul li {
