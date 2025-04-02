@@ -64,6 +64,8 @@ body {
     align-items: center;
     height: 100%;
     font-size: 13px;
+    opacity: 0;
+    animation: slideDown 1.50s forwards 0.75s;
 }
 
 .navbar ul li {
