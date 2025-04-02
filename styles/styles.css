@@ -46,6 +46,10 @@ body {
     height: 60px;
     width: 60px;
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    animation: fadeIn 2.25s forwards 1.5s;
 }
 
 
@@ -244,8 +248,8 @@ h3 {
 @media (max-width: 800px) {
 
     .navbar-logo {
-        height: 40px;
-        width: 40px;
+        height: 50px;
+        width: 50px;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
