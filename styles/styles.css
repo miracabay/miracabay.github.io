@@ -243,6 +243,14 @@ h3 {
 /* Mobil Uyum (768px Altı) */
 @media (max-width: 800px) {
 
+    .navbar-logo {
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
     .navbar ul li {
         margin: 0;
     }
