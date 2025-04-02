@@ -32,14 +32,22 @@ body {
     animation: slideLeft 0.75s ease-out forwards;
 }
 
-.navbar-logo {
-    height: 60px; /* Logo boyutunu ayarlayın */
-    width: auto; /* Orantılı genişlik */
+.navbar::before {
+    content: "";
     position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
+    left: 0;
+    top: 0;
+    width: 60px; /* Kare genişliği */
+    height: 60px; /* Kare yüksekliği */
+    background-color: #1e1e1e; /* Sayfa arka plan rengi ile aynı olmalı */
 }
+
+.navbar-logo {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+}
+
 
 .navbar a:focus,
 .navbar a:active {
@@ -233,17 +241,13 @@ h3 {
 /* Mobil Uyum (768px Altı) */
 @media (max-width: 800px) {
 
-    .navbar-logo {
-        height: 40px;
-    }
-
     .navbar ul li {
         margin: 0;
     }
 
     .navbar ul li a {
         padding: 5px 8px;
-        font-size: 10px;
+        font-size: 8px;
     }
 
     .navbar-underline {
