@@ -225,6 +225,28 @@ h1 {
     margin: 0 50px 0 50px;
 }
 
+.myprojects-container {
+    flex-direction: column;
+    margin-top: 200px;
+}
+
+.myprojects-container h2 {
+    font-family: 'Clicker Script', cursive;
+    font-weight: bold;
+    font-size: 25px;
+    color: #1e1e1e;
+    text-align: center;
+    margin: 0 50px 0 50px;
+}
+
+.myprojects-container p {
+    font-family: 'Comfortaa', sans-serif;
+    color: #1e1e1e;
+    text-align: center;
+    font-size: 15px;
+    margin: 0 50px 0 50px;
+}
+
 /* Footer Animasyonu */
 @keyframes slideRight {
     from { transform: translateX(100%); opacity: 0; }
@@ -333,6 +355,19 @@ h1 {
     .navbar-underline {
         bottom: 17px;
         height: 3px;
+    }
+
+    .myprojects-container {
+        margin-top: 150px;
+    }
+
+    .myprojects-container h2 {
+        font-size: 15px;
+    }
+    
+    .myprojects-container p {
+        font-size: 10px;
+        margin: 0 20px 0 20px;
     }
 
     .whoami-container {
