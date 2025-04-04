@@ -2,16 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
 
-/* Sayfa içeriklerinin başlangıç durumu */
-.page-content {
-    display: none; /* Başlangıçta tüm içerikler gizli */
-}
-
-body {
+html, body {
     font-family: 'Comfortaa', sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    width: 100%;
 }
 
 /* Navbar Animasyonu */
@@ -135,29 +132,54 @@ body {
     background-color: #3e3e3e;
 }
 
-/* Header */
-h2 {
-    color: #1e1e1e;
-    position: absolute; /* Konumlandırma */
-    top: 30%; /* Sayfa yüksekliğinin yarısı */
-    left: 50%; /* Sayfa genişliğinin yarısı */
-    transform: translate(-50%, -50%); /* Kendi genişlik ve yüksekliğini dikkate alarak tam ortalama */
-    font-family: 'Clicker Script', cursive;
-    text-align: center;
+@keyframes slideRightPage {
+    from {
+        transform: translate(100vw, -50%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeftPage {
+    from {
+        transform: translate(-100vw, -50%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+
+.page-content {
+    position: fixed; /* Tüm ekrana göre konumlandır */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Yatay ve dikey olarak ortala */
+    width: 100%;
+    height: 100%;
     opacity: 0;
-    animation: fadeIn 2.25s forwards 1.5s;
+}
+
+.page-content.show-right {
+    animation: slideRightPage 0.4s forwards;
+}
+
+.page-content.show-left {
+    animation: slideLeftPage 0.4s forwards;
 }
 
 h3 {
     color: #1e1e1e;
     position: absolute; /* Konumlandırma */
     top: 30%; /* Sayfa yüksekliğinin yarısı */
-    left: 50%; /* Sayfa genişliğinin yarısı */
-    transform: translate(-50%, -50%); /* Kendi genişlik ve yüksekliğini dikkate alarak tam ortalama */
+    left: 50%;
     font-family: 'Clicker Script', cursive;
-    text-align: center;
     opacity: 0;
-    animation: fadeIn 0.75s forwards;
+    animation: slideLeftPage 0.4s forwards;
 }
 
 /* Footer Animasyonu */

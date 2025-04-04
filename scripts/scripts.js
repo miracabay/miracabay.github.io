@@ -62,8 +62,22 @@ function setupNavbar() {
             event.preventDefault();
             const targetId = link.getAttribute("href").substring(1);
 
-            document.querySelectorAll(".page-content").forEach(page => page.style.display = "none");
+            const currentActivePage = document.querySelector(".page-content[style*='display: block']");
             const targetPage = document.getElementById(targetId);
+
+            // Sayfa geçiş animasyonu
+            if (currentActivePage && currentActivePage !== targetPage) {
+                if (targetPage) {
+                    if (targetPage.id === "home" || targetPage.id === "whoAmI") {
+                        targetPage.style.animation = "slideLeftPage 0.5s forwards";
+                    } else {
+                        targetPage.style.animation = "slideRightPage 0.5s forwards";
+                    }
+                }
+                currentActivePage.style.display = "none";
+            }
+
+            // Yeni sayfayı göster
             if (targetPage) {
                 targetPage.style.display = "block";
             }
