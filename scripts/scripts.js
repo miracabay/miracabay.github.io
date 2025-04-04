@@ -71,12 +71,18 @@ function setupNavbar() {
                 if (targetPage) {
                     if (newActiveIndex > currentActiveIndex) {
                         targetPage.style.animation = "slideRightPageOpen 0.4s forwards";
+                        currentActivePage.style.animation = "slideLeftPageClose 0.4s forwards";
                     } else {
                         targetPage.style.animation = "slideLeftPageOpen 0.4s forwards";
+                        currentActivePage.style.animation = "slideRightPageClose 0.4s forwards";
                     }
                 }
-                currentActivePage.style.display = "none";
-            }
+            
+                currentActivePage.addEventListener("animationend", function handleAnimEnd() {
+                    currentActivePage.style.display = "none";
+                    currentActivePage.removeEventListener("animationend", handleAnimEnd);
+                });
+            }            
 
             if (targetPage) {
                 targetPage.style.display = "block";

@@ -143,6 +143,17 @@ html, body {
     }
 }
 
+@keyframes slideRightPageClose {
+    from {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+    to {
+        transform: translate(150vw, -50%);
+        opacity: 0;
+    }
+}
+
 @keyframes slideLeftPageOpen {
     from {
         transform: translate(-150vw, -50%);
@@ -151,6 +162,17 @@ html, body {
     to {
         transform: translate(-50%, -50%);
         opacity: 1;
+    }
+}
+
+@keyframes slideLeftPageClose {
+    from {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+    to {
+        transform: translate(-150vw, -50%);
+        opacity: 0;
     }
 }
 
