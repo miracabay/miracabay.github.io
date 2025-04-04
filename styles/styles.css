@@ -200,21 +200,28 @@ h1 {
 
 .whoami-container {
     display: flex;
+    position: absolute;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: 'Comfortaa', sans-serif;
     min-height: 100vh; /* Sayfa yüksekliği kadar alan kaplasın */
 }
 
 .whoami-container h2 {
+    font-family: 'Clicker Script', cursive;
+    font-weight: bold;
+    font-size: 25px;
     color: #1e1e1e;
+    text-align: center;
+    margin: 0 50px 0 50px;
 }
 
 .whoami-container p {
+    font-family: 'Comfortaa', sans-serif;
     color: #1e1e1e;
     text-align: center;
+    font-size: 15px;
     margin: 0 50px 0 50px;
 }
 
@@ -303,7 +310,6 @@ h1 {
 }
 
 
-/* Mobil Uyum (768px Altı) */
 @media (max-width: 800px) {
 
     .navbar-logo {
@@ -332,9 +338,13 @@ h1 {
     .whoami-container {
         padding: 10px;
     }
+
+    .whoami-container h2 {
+        font-size: 10px;
+    }
     
     .whoami-container p {
-        font-size: 10px;
+        font-size: 8px;
     }
 
     .footer p {
