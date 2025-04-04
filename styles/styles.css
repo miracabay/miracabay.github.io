@@ -209,41 +209,24 @@ h2 {
     text-align: center;
 }
 
-h3 {
-    color: #1e1e1e;
-    position: absolute; /* Konumlandırma */
-    top: 30%; /* Sayfa yüksekliğinin yarısı */
-    padding-top: 10px;
-    font-size: 14px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'Comfortaa', sans-serif;
-    opacity: 1;
+.whoami-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    font-family: 'Comfortaa', sans-serif;
+    min-height: 100vh; /* Sayfa yüksekliği kadar alan kaplasın */
 }
 
-h4 {
+.whoami-container h2 {
     color: #1e1e1e;
-    position: absolute; /* Konumlandırma */
-    top: 42%; /* Sayfa yüksekliğinin yarısı */
-    font-size: 14px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'Comfortaa', sans-serif;
-    opacity: 1;
-    text-align: center;
 }
 
-h5 {
+.whoami-container p {
     color: #1e1e1e;
-    position: absolute; /* Konumlandırma */
-    top: 57%; /* Sayfa yüksekliğinin yarısı */
-    font-size: 14px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'Comfortaa', sans-serif;
-    opacity: 1;
     text-align: center;
+    margin: 0 50px 0 50px;
 }
 
 /* Footer Animasyonu */
@@ -355,6 +338,18 @@ h5 {
     .navbar-underline {
         bottom: 17px;
         height: 3px;
+    }
+
+    .whoami-container {
+        padding: 10px;
+    }
+    
+    .whoami-container h2 {
+        font-size: 1.5em;
+    }
+    
+    .whoami-container p {
+        font-size: 0.9em;
     }
 
     .footer p {
