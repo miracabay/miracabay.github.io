@@ -333,12 +333,8 @@ h1 {
         padding: 10px;
     }
     
-    .whoami-container h2 {
-        font-size: 1.5em;
-    }
-    
     .whoami-container p {
-        font-size: 0.9em;
+        font-size: 10px;
     }
 
     .footer p {
