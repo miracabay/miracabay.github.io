@@ -200,15 +200,12 @@ h1 {
 
 .whoami-container {
     display: flex;
+    position: absolute;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     min-height: 100vh; /* Sayfa yüksekliği kadar alan kaplasın */
-    position: absolute;
-    top: 50%; /* Dikeyde ortalar */
-    left: 50%; /* Yatayda ortalar */
-    transform: translate(-50%, -50%); /* Tam ortalama */
 }
 
 .whoami-container h2 {
@@ -343,11 +340,11 @@ h1 {
     }
 
     .whoami-container h2 {
-        font-size: 13px;
+        font-size: 10px;
     }
     
     .whoami-container p {
-        font-size: 10px;
+        font-size: 8px;
     }
 
     .footer p {
