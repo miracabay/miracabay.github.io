@@ -200,12 +200,12 @@ h1 {
 
 .whoami-container {
     display: flex;
-    position: absolute;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     min-height: 100vh; /* Sayfa yüksekliği kadar alan kaplasın */
+    position: relative; /* Flexbox ile ortalamada yardımcı olacak */
 }
 
 .whoami-container h2 {
