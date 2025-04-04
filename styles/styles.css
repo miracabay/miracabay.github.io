@@ -335,16 +335,13 @@ h1 {
         height: 3px;
     }
 
-    .whoami-container {
-        padding: 10px;
-    }
-
     .whoami-container h2 {
         font-size: 10px;
     }
     
     .whoami-container p {
         font-size: 8px;
+        margin: 0 20px 0 20px;
     }
 
     .footer p {
