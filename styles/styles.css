@@ -187,7 +187,7 @@ html, body {
     animation: fadeIn 2.25s forwards 1.5s;
 }
 
-h3 {
+h1 {
     color: #1e1e1e;
     position: absolute; /* Konumlandırma */
     top: 30%; /* Sayfa yüksekliğinin yarısı */
@@ -195,6 +195,55 @@ h3 {
     transform: translate(-50%, -50%);
     font-family: 'Clicker Script', cursive;
     opacity: 1;
+    text-align: center;
+}
+
+h2 {
+    color: #1e1e1e;
+    position: absolute; /* Konumlandırma */
+    top: 20%; /* Sayfa yüksekliğinin yarısı */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Clicker Script', cursive;
+    opacity: 1;
+    text-align: center;
+}
+
+h3 {
+    color: #1e1e1e;
+    position: absolute; /* Konumlandırma */
+    top: 30%; /* Sayfa yüksekliğinin yarısı */
+    padding-top: 10px;
+    font-size: 14px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Comfortaa', sans-serif;
+    opacity: 1;
+    text-align: center;
+}
+
+h4 {
+    color: #1e1e1e;
+    position: absolute; /* Konumlandırma */
+    top: 42%; /* Sayfa yüksekliğinin yarısı */
+    font-size: 14px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Comfortaa', sans-serif;
+    opacity: 1;
+    text-align: center;
+}
+
+h5 {
+    color: #1e1e1e;
+    position: absolute; /* Konumlandırma */
+    top: 57%; /* Sayfa yüksekliğinin yarısı */
+    font-size: 14px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Comfortaa', sans-serif;
+    opacity: 1;
+    text-align: center;
 }
 
 /* Footer Animasyonu */
