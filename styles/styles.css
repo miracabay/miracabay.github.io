@@ -134,7 +134,7 @@ html, body {
 
 @keyframes slideRightPage {
     from {
-        transform: translate(100vw, -50%);
+        transform: translate(150vw, -50%);
         opacity: 0;
     }
     to {
@@ -145,7 +145,7 @@ html, body {
 
 @keyframes slideLeftPage {
     from {
-        transform: translate(-100vw, -50%);
+        transform: translate(-150vw, -50%);
         opacity: 0;
     }
     to {
@@ -162,14 +162,7 @@ html, body {
     width: 100%;
     height: 100%;
     opacity: 0;
-}
-
-.page-content.show-right {
-    animation: slideRightPage 0.4s forwards;
-}
-
-.page-content.show-left {
-    animation: slideLeftPage 0.4s forwards;
+    animation: fadeIn 2.25s forwards 1.5s;
 }
 
 h3 {

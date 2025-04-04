@@ -51,6 +51,8 @@ function setupNavbar() {
     }
 
     const homeLink = document.querySelector('.navbar ul li a[href="#home"]');
+    let currentActiveIndex = Array.from(navbarLinks).indexOf(homeLink); // ilk aktif sayfa
+
     if (homeLink) {
         homeLink.classList.add("active");
         moveUnderline(homeLink);
@@ -61,26 +63,26 @@ function setupNavbar() {
         link.addEventListener("click", function (event) {
             event.preventDefault();
             const targetId = link.getAttribute("href").substring(1);
-
-            const currentActivePage = document.querySelector(".page-content[style*='display: block']");
             const targetPage = document.getElementById(targetId);
+            const currentActivePage = document.querySelector(".page-content[style*='display: block']");
+            const newActiveIndex = Array.from(navbarLinks).indexOf(link);
 
-            // Sayfa geçiş animasyonu
             if (currentActivePage && currentActivePage !== targetPage) {
                 if (targetPage) {
-                    if (targetPage.id === "home" || targetPage.id === "whoAmI") {
-                        targetPage.style.animation = "slideLeftPage 0.5s forwards";
-                    } else {
+                    if (newActiveIndex > currentActiveIndex) {
                         targetPage.style.animation = "slideRightPage 0.5s forwards";
+                    } else {
+                        targetPage.style.animation = "slideLeftPage 0.5s forwards";
                     }
                 }
                 currentActivePage.style.display = "none";
             }
 
-            // Yeni sayfayı göster
             if (targetPage) {
                 targetPage.style.display = "block";
             }
+
+            currentActiveIndex = newActiveIndex;
 
             navbarLinks.forEach(nav => nav.classList.remove("active"));
             link.classList.add("active");
