@@ -70,9 +70,9 @@ function setupNavbar() {
             if (currentActivePage && currentActivePage !== targetPage) {
                 if (targetPage) {
                     if (newActiveIndex > currentActiveIndex) {
-                        targetPage.style.animation = "slideRightPage 0.5s forwards";
+                        targetPage.style.animation = "slideRightPageOpen 0.4s forwards";
                     } else {
-                        targetPage.style.animation = "slideLeftPage 0.5s forwards";
+                        targetPage.style.animation = "slideLeftPageOpen 0.4s forwards";
                     }
                 }
                 currentActivePage.style.display = "none";
