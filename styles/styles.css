@@ -205,7 +205,10 @@ h1 {
     align-items: center;
     text-align: center;
     min-height: 100vh; /* Sayfa yüksekliği kadar alan kaplasın */
-    position: relative; /* Flexbox ile ortalamada yardımcı olacak */
+    position: absolute;
+    top: 50%; /* Dikeyde ortalar */
+    left: 50%; /* Yatayda ortalar */
+    transform: translate(-50%, -50%); /* Tam ortalama */
 }
 
 .whoami-container h2 {
