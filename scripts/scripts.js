@@ -27,7 +27,10 @@ document.addEventListener("DOMContentLoaded", async function () {
         }
     }
 
-    document.getElementById("home").style.display = "block";
+    // Sayfa yüklendikten hemen sonra home'u göster ve animasyonu tetikle
+    const homePage = document.getElementById("home");
+    homePage.style.display = "block";
+    homePage.style.animation = "slideRightPageOpen 0.4s forwards";
 });
 
 function setupNavbar() {
