@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     // Sayfa yüklendikten hemen sonra home'u göster ve animasyonu tetikle
     const homePage = document.getElementById("home");
     homePage.style.display = "block";
-    homePage.style.animation = "h1In 1s forwards 2.25s";
+    homePage.style.animation = "homeIn 1s forwards 2.25s";
 });
 
 function setupNavbar() {
