@@ -41,6 +41,7 @@ html, body {
     z-index: 1000;
     border-top-right-radius: 60px;
     animation: slideLeft 0.75s ease-out forwards;
+    overflow: hidden;
 }
 
 .navbar::before {
