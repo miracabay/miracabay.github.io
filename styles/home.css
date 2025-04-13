@@ -1,0 +1,33 @@
+#home {
+    position: fixed;
+}
+
+h1 {
+    color: #1e1e1e;
+    position: absolute; /* Konumlandırma */
+    top: 25%; /* Sayfa yüksekliğinin yarısı */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Clicker Script', cursive;
+    opacity: 1;
+    text-align: center;
+}
+
+.home-container p {
+    font-size: 25px;
+    color: #1e1e1e;
+    position: absolute; /* Konumlandırma */
+    top: 55%; /* Sayfa yüksekliğinin yarısı */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Clicker Script', cursive;
+    opacity: 1;
+    text-align: center;
+}
+
+
+@media (max-width: 800px) {
+    .home-container p {
+        font-size: 20px;
+    }
+}

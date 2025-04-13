@@ -1,0 +1,124 @@
+/* Genel Sayfa Düzeni */
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+
+html, body {
+    font-family: 'Comfortaa', sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.page-content {
+    position: absolute; /* Tüm ekrana göre konumlandır */
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: fadeIn 2.25s forwards 1.5s;
+}
+
+/* Navbar Linkleri Animasyonu */
+@keyframes slideDown {
+    from { transform: translateY(-100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Navbar Animasyonu */
+@keyframes slideLeft {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideRightPageOpen {
+    from {
+        transform: translate(150vw, -50%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRightPageClose {
+    from {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+    to {
+        transform: translate(150vw, -50%);
+        opacity: 0;
+    }
+}
+
+@keyframes slideLeftPageOpen {
+    from {
+        transform: translate(-150vw, -50%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeftPageClose {
+    from {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+    to {
+        transform: translate(-150vw, -50%);
+        opacity: 0;
+    }
+}
+
+@keyframes homeIn {
+    from {
+        transform: translate(-50%, -50%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+
+/* Footer Animasyonu */
+@keyframes slideRight {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+
+@media (max-width: 800px) {
+
+    .page-content {
+        position: fixed; /* Tüm ekrana göre konumlandır */
+        overflow-y: scroll;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        animation: fadeIn 2.25s forwards 1.5s;
+    }
+}

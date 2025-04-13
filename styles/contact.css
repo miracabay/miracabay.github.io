@@ -1,0 +1,89 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 180px;
+    padding-bottom: 120px;
+}
+
+.contact-beyazSatir,
+.contact-siyahSatir {
+    display: flex;
+    align-items: center;
+    height: 120px;
+}
+.contact-beyazSatir {
+    background-color: #1e1e1e;
+}
+.contact-siyahSatir {
+    background-color: #ffffff;
+}
+
+.contact-beyazSatir h2,
+.contact-siyahSatir h2 {
+    flex: 1;
+    text-align: center;
+    font-family: 'Clicker Script', cursive;
+    font-weight: bold;
+    font-size: 30px;
+}
+.contact-beyazSatir h2 {
+    color: #ffffff;
+}
+.contact-siyahSatir h2 {
+    color: #1e1e1e;
+}
+
+.contact-beyazSatir h3,
+.contact-siyahSatir h3 {
+    flex: 1;
+    text-align: center;
+    font-size: 20px;
+}
+.contact-beyazSatir h3 {
+    color: #ffffff;
+}
+.contact-siyahSatir h3 {
+    color: #1e1e1e;
+}
+
+.contact-beyazSatir h4,
+.contact-siyahSatir h4 {
+    flex: 1;
+    text-align: center;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 15px;
+}
+.contact-beyazSatir h4 {
+    color: #ffffff;
+}
+.contact-siyahSatir h4 {
+    color: #1e1e1e;
+}
+
+
+@media (max-width: 800px) {
+    .contact-container {
+        padding-top: 20%;
+        padding-bottom: 10%;
+    }
+
+    .contact-beyazSatir,
+    .contact-siyahSatir {
+        height: 75px;
+    }
+
+    .contact-beyazSatir h2,
+    .contact-siyahSatir h2 {
+        font-size: 15px;
+    }
+
+    .contact-beyazSatir h3,
+    .contact-siyahSatir h3 {
+        font-size: 12px;
+    }
+
+    .contact-beyazSatir h4,
+    .contact-siyahSatir h4 {
+        font-size: 10px;
+    }
+}

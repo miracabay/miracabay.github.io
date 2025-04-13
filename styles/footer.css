@@ -1,0 +1,99 @@
+/* Footer */
+.footer {
+    background-color: #1e1e1e;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 60px;
+    animation: slideRight 0.75s ease-out forwards;
+}
+
+/* Footer Metni */
+.footer p {
+    margin: 0;
+    font-size: 12px;
+    text-align: center;
+    flex-grow: 1;
+    opacity: 0;
+    animation: slideUp 1.50s forwards 0.75s;
+}
+
+/* Sosyal Medya */
+.footer .social-media {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    right: 20px;
+    opacity: 0;
+    animation: fadeIn 2.25s forwards 1.5s;
+    z-index: 9999;
+}
+
+.footer .social-media li a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: block; /* Tüm simgeyi tıklanabilir yapmak için */
+}
+
+/* Sosyal Medya Hover Renkleri */
+.footer .social-media li a.instagram:hover { color: #E4405F; }
+.footer .social-media li a.linkedin:hover { color: #0A66C2; }
+.footer .social-media li a.youtube:hover { color: #FF0000; }
+.footer .social-media li a.github:hover { color: #A9A9A9; }
+.footer .social-media li a.twitter:hover { color: #1DA1F2; }
+
+/* Sosyal Medya Hover Renkleri */
+.footer .social-media li a.instagram:hover {
+    filter: drop-shadow(0px 0px 10px rgba(228, 64, 95)); /* Instagram için renkli gölge */
+}
+.footer .social-media li a.linkedin:hover {
+    filter: drop-shadow(0px 0px 10px rgba(10, 102, 194)); /* LinkedIn için renkli gölge */
+}
+.footer .social-media li a.youtube:hover {
+    filter: drop-shadow(0px 0px 10px rgba(255, 0, 0)); /* YouTube için kırmızı gölge */
+}
+.footer .social-media li a.github:hover {
+    filter: drop-shadow(0px 0px 10px rgba(169, 169, 169)); /* GitHub için koyu gri gölge */
+}
+.footer .social-media li a.twitter:hover {
+    filter: drop-shadow(0px 0px 10px rgba(29, 161, 242)); /* Twitter için mavi gölge */
+}
+
+
+@media (max-width: 800px) {
+    .footer {
+        height: 50px;
+        border-bottom-left-radius: 50px;
+    }
+
+    .footer p {
+        font-size: 8px;
+        text-align: center;
+        margin-top: 40px;
+        padding-bottom: 10px;
+    }
+
+    .footer .social-media {
+        justify-content: center; /* Mobilde ortaya hizala */
+        width: 100%;
+        right: auto;
+        padding-top: 5px;
+        margin-bottom: 15px;
+        gap: 55px;
+    }
+
+    .footer .social-media li a {
+        font-size: 18px;
+    }
+}
