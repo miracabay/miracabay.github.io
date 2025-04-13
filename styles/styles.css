@@ -269,7 +269,7 @@ h1 {
     font-size: 25px;
     color: #1e1e1e;
     text-align: center;
-    margin: 0 50px 0 50px;
+    margin: 20px 50px 0 50px;
 }
 
 .myprojects-container p {
@@ -283,7 +283,7 @@ h1 {
 .contact-container {
     display: flex;
     flex-direction: column;
-    padding-top: 180px;
+    padding-top: 160px;
     padding-bottom: 120px;
 }
 
@@ -297,8 +297,10 @@ h1 {
 
 .contact-tekSatir h2,
 .contact-tekSatir h3,
+.contact-tekSatir h4,
 .contact-ciftSatir h2,
-.contact-ciftSatir h3 {
+.contact-ciftSatir h3,
+.contact-ciftSatir h4    {
     flex: 1;
     margin: 0;
     text-align: center;
@@ -312,6 +314,12 @@ h1 {
 }
 
 .contact-tekSatir h3 {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 20px;
+    color: #1e1e1e;
+}
+
+.contact-tekSatir h4 {
     font-family: 'Comfortaa', sans-serif;
     font-size: 15px;
     color: #1e1e1e;
@@ -333,6 +341,12 @@ h1 {
 }
 
 .contact-ciftSatir h3 {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.contact-ciftSatir h4 {
     font-family: 'Comfortaa', sans-serif;
     font-size: 15px;
     color: #ffffff;
@@ -526,23 +540,20 @@ h1 {
         height: 75px;
     }
     
-    .contact-tekSatir h2,
-    .contact-tekSatir h3,
-    .contact-ciftSatir h2,
-    .contact-ciftSatir h3 {
-        flex: 1;
-        margin: 0;
-        text-align: center;
-    }
-    
     .contact-tekSatir h2 {
         font-family: 'Clicker Script', cursive;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 15px;
         color: #1e1e1e;
     }
     
     .contact-tekSatir h3 {
+        font-family: 'Comfortaa', sans-serif;
+        font-size: 12px;
+        color: #1e1e1e;
+    }
+
+    .contact-tekSatir h4 {
         font-family: 'Comfortaa', sans-serif;
         font-size: 10px;
         color: #1e1e1e;
@@ -559,11 +570,17 @@ h1 {
     .contact-ciftSatir h2 {
         font-family: 'Clicker Script', cursive;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 15px;
         color: #ffffff;
     }
     
     .contact-ciftSatir h3 {
+        font-family: 'Comfortaa', sans-serif;
+        font-size: 12px;
+        color: #ffffff;
+    }
+
+    .contact-ciftSatir h4 {
         font-family: 'Comfortaa', sans-serif;
         font-size: 10px;
         color: #ffffff;
