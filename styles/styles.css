@@ -602,7 +602,7 @@ h1 {
         justify-content: center; /* Mobilde ortaya hizala */
         width: 100%;
         right: auto;
-        padding-top: 5px;
+        padding-top: 4px;
         margin-bottom: 15px;
         gap: 55px;
     }
