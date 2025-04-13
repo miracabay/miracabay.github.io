@@ -437,6 +437,19 @@ h1 {
 }
 
 
+@media (hover: hover) and (pointer: fine) {
+    .navbar ul li a:hover {
+      background-color: #3e3e3e;
+    }
+  }
+  
+  @media (hover: none) {
+    .navbar ul li a:hover,
+    .navbar ul li a:focus {
+      background-color: transparent;
+    }
+  }  
+
 @media (max-width: 800px) {
 
     .page-content {
@@ -485,7 +498,7 @@ h1 {
     }
 
     .navbar-underline {
-        bottom: 6px;
+        bottom: 12px;
         height: 3px;
     }
 
@@ -595,14 +608,14 @@ h1 {
         font-size: 8px;
         text-align: center;
         margin-top: 40px;
-        padding-bottom: 15px;
+        padding-bottom: 10px;
     }
 
     .footer .social-media {
         justify-content: center; /* Mobilde ortaya hizala */
         width: 100%;
         right: auto;
-        padding-top: 4px;
+        padding-top: 5px;
         margin-bottom: 15px;
         gap: 55px;
     }
