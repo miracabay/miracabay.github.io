@@ -283,7 +283,7 @@ h1 {
 .contact-container {
     display: flex;
     flex-direction: column;
-    padding-top: 120px;
+    padding-top: 180px;
     padding-bottom: 120px;
 }
 
