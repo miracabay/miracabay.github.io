@@ -226,13 +226,22 @@ h1 {
     padding-bottom: 120px;
 }
 
+.whoami-container-farkliParagraf {
+    background-color: #1e1e1e;
+}
+
+.whoami-container-farkliParagraf h2,
+.whoami-container-farkliParagraf p {
+    color: #ffffff !important;
+}
+
 .whoami-container h2 {
     font-family: 'Clicker Script', cursive;
     font-weight: bold;
     font-size: 25px;
     color: #1e1e1e;
     text-align: center;
-    margin: 0 50px 0 50px;
+    margin: 20px 50px 0 50px;
 }
 
 .whoami-container p {
@@ -269,6 +278,64 @@ h1 {
     text-align: center;
     font-size: 15px;
     margin: 0 50px 0 50px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+/* Tek Satır için */
+.contact-tekSatir {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    height: 120px;
+}
+
+.contact-tekSatir h2,
+.contact-tekSatir h3,
+.contact-ciftSatir h2,
+.contact-ciftSatir h3 {
+    flex: 1;
+    margin: 0;
+    text-align: center;
+}
+
+.contact-tekSatir h2 {
+    font-family: 'Clicker Script', cursive;
+    font-weight: bold;
+    font-size: 30px;
+    color: #1e1e1e;
+}
+
+.contact-tekSatir h3 {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 15px;
+    color: #1e1e1e;
+}
+
+/* Çift Satır için */
+.contact-ciftSatir {
+    display: flex;
+    align-items: center;
+    background-color: #1e1e1e;
+    height: 120px;
+}
+
+.contact-ciftSatir h2 {
+    font-family: 'Clicker Script', cursive;
+    font-weight: bold;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.contact-ciftSatir h3 {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 15px;
+    color: #ffffff;
 }
 
 /* Footer Animasyonu */
@@ -442,6 +509,64 @@ h1 {
     .myprojects-container p {
         font-size: 10px;
         margin: 0 20px 0 20px;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: -10%;
+        padding-bottom: 120px;
+    }
+    
+    /* Tek Satır için */
+    .contact-tekSatir {
+        display: flex;
+        align-items: center;
+        background-color: #ffffff;
+        height: 75px;
+    }
+    
+    .contact-tekSatir h2,
+    .contact-tekSatir h3,
+    .contact-ciftSatir h2,
+    .contact-ciftSatir h3 {
+        flex: 1;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .contact-tekSatir h2 {
+        font-family: 'Clicker Script', cursive;
+        font-weight: bold;
+        font-size: 20px;
+        color: #1e1e1e;
+    }
+    
+    .contact-tekSatir h3 {
+        font-family: 'Comfortaa', sans-serif;
+        font-size: 10px;
+        color: #1e1e1e;
+    }
+    
+    /* Çift Satır için */
+    .contact-ciftSatir {
+        display: flex;
+        align-items: center;
+        background-color: #1e1e1e;
+        height: 75px;
+    }
+    
+    .contact-ciftSatir h2 {
+        font-family: 'Clicker Script', cursive;
+        font-weight: bold;
+        font-size: 20px;
+        color: #ffffff;
+    }
+    
+    .contact-ciftSatir h3 {
+        font-family: 'Comfortaa', sans-serif;
+        font-size: 10px;
+        color: #ffffff;
     }
 
     .footer {
