@@ -12,10 +12,10 @@
     height: 120px;
 }
 .contact-beyazSatir {
-    background-color: #1e1e1e;
+    background-color: #ffffff;
 }
 .contact-siyahSatir {
-    background-color: #ffffff;
+    background-color: #1e1e1e;
 }
 
 .contact-beyazSatir h2,
@@ -27,10 +27,10 @@
     font-size: 30px;
 }
 .contact-beyazSatir h2 {
-    color: #ffffff;
+    color: #1e1e1e;
 }
 .contact-siyahSatir h2 {
-    color: #1e1e1e;
+    color: #ffffff;
 }
 
 .contact-beyazSatir h3,
@@ -40,10 +40,10 @@
     font-size: 20px;
 }
 .contact-beyazSatir h3 {
-    color: #ffffff;
+    color: #1e1e1e;
 }
 .contact-siyahSatir h3 {
-    color: #1e1e1e;
+    color: #ffffff;
 }
 
 .contact-beyazSatir h4,
@@ -54,10 +54,10 @@
     font-size: 15px;
 }
 .contact-beyazSatir h4 {
-    color: #ffffff;
+    color: #1e1e1e;
 }
 .contact-siyahSatir h4 {
-    color: #1e1e1e;
+    color: #ffffff;
 }
 
 
