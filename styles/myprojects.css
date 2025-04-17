@@ -1,0 +1,88 @@
+.myprojects-container {
+    padding-top: 180px;
+    padding-bottom: 120px;
+}
+
+.myprojects-beyazSatir,
+.myprojects-siyahSatir {
+    display: flex; /* FLEX EKLENDİ */
+    flex-direction: column; /* Elemanları üst üste dizelim */
+    justify-content: center; /* Dikeyde ortala */
+    align-items: center; /* Yatayda ortala */
+    padding: 10px 30px 10px 30px;
+    height: auto;
+}    
+
+.myprojects-beyazSatir {
+    background-color: #ffffff; 
+}
+.myprojects-siyahSatir {
+    background-color: #1e1e1e;
+}
+
+.myprojects-beyazSatir h2,
+.myprojects-siyahSatir h2 {
+    text-align: center;
+    font-family: 'Clicker Script', cursive;
+    font-weight: bold;
+    font-size: 25px;
+}
+.myprojects-beyazSatir h2 {
+    color: #1e1e1e;
+}
+.myprojects-siyahSatir h2 {
+    color: #ffffff;
+}
+
+.myprojects-beyazSatir h3,
+.myprojects-siyahSatir h3 {
+    text-align: center;
+    font-size: 15px;
+}
+.myprojects-beyazSatir h3 {
+    color: #1e1e1e;
+}
+.myprojects-siyahSatir h3 {
+    color: #ffffff;
+}
+
+.myprojects-beyazSatir h4,
+.myprojects-siyahSatir h4 {
+    text-align: center;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 12px;
+}
+.myprojects-beyazSatir h4 {
+    color: #1e1e1e;
+}
+.myprojects-siyahSatir h4 {
+    color: #ffffff;
+}
+
+
+@media (max-width: 800px) {
+    .myprojects-container {
+        padding-top: 40%;
+        padding-bottom: 10%;
+    }
+
+    .myprojects-beyazSatir,
+    .myprojects-siyahSatir {
+        height: auto;
+    }
+
+    .myprojects-beyazSatir h2,
+    .myprojects-siyahSatir h2 {
+        font-size: 15px;
+    }
+
+    .myprojects-beyazSatir h3,
+    .myprojects-siyahSatir h3 {
+        font-size: 12px;
+    }
+
+    .myprojects-beyazSatir h4,
+    .myprojects-siyahSatir h4 {
+        font-size: 10px;
+    }
+}
