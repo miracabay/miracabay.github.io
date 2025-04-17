@@ -46,6 +46,9 @@
     text-align: center;
     font-family: 'Comfortaa', sans-serif;
     font-size: 12px;
+    line-height: 1.5em;
+    min-height: calc(1.5em * 3);
+    max-width: 700px;
 }
 
 .whoami-beyazSatir p {
@@ -75,7 +78,7 @@
 
     .whoami-beyazSatir h2,
     .whoami-siyahSatir h2 {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .whoami-beyazSatir h2 {
@@ -89,6 +92,6 @@
     .whoami-beyazSatir p,
     .whoami-siyahSatir p {
         flex: 10 1;
-        font-size: 7px;
+        font-size: 8px;
     }
 }
