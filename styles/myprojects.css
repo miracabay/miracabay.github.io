@@ -43,7 +43,7 @@
     flex: 1.5;
     text-align: center;
     font-family: 'Comfortaa', sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.5em;
     min-height: calc(1.5em * 3);
     margin: 0 30px 0 30px;
@@ -58,22 +58,30 @@
 }
 
 .myprojects-link {
-    color: #ffffff;
-    border-radius: 8px;
     font-weight: bold;
-    padding: 7px;
+    font-size: 12px;
 }
 
 .myprojects-link-ready {
-    background-color: #00cccc;
+    cursor: pointer;
+    transition: color 0.3s ease; /* Hover için yumuşak geçiş */
+    color: #00cccc;
+}
+
+.myprojects-link-ready:hover {
+    color: #3498db;
 }
 
 .myprojects-link-inDevelopment {
-    background-color: #ffcc00;
+    color: #ffcc00;
+    cursor: wait;
+    user-select: none;
 }
 
 .myprojects-link-archive {
-    background-color: #cc0000;
+    color: #cc0000;
+    cursor: not-allowed;
+    user-select: none;
 }
 
 
@@ -96,6 +104,7 @@
     }
 
     .myprojects-link {
+        font-size: 50%;
         padding: 2%;
     }
 }
