@@ -87,7 +87,6 @@
 
 @media (max-width: 800px) {
     .myprojects-container {
-        position: relative;
         padding-top: 50%;
         padding-bottom: 15%;
     }
