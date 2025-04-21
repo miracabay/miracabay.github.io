@@ -87,8 +87,14 @@
 
 @media (max-width: 800px) {
     .myprojects-container {
-        padding-top: 30%;
+        position: relative;
+        padding-top: 50%;
         padding-bottom: 15%;
+    }
+
+    .myprojects-beyazSatir,
+    .myprojects-siyahSatir {
+        min-height: 75%;
     }
 
     .myprojects-beyazSatir h2,
