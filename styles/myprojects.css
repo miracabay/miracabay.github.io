@@ -64,7 +64,7 @@
 
 .myprojects-link-ready {
     cursor: pointer;
-    transition: color 0.3s ease; /* Hover için yumuşak geçiş */
+    transition: color 0.3s ease;
     color: #00cccc;
 }
 
