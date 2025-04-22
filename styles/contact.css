@@ -39,6 +39,10 @@
     color: #ffffff;
 }
 
+.contact-simge {
+    font-size: 25px;
+}
+
 .contact-beyazSatir p,
 .contact-siyahSatir p {
     flex: 1;
@@ -60,7 +64,7 @@
 
 .contact-link {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .contact-link-ready {
@@ -100,13 +104,17 @@
 
     .contact-beyazSatir h2,
     .contact-siyahSatir h2 {
-        font-size: 95%;
+        font-size: 98%;
         margin: 2%;
+    }
+
+    .contact-simge {
+        font-size: 80%;
     }
 
     .contact-beyazSatir p,
     .contact-siyahSatir p {
-        font-size: 50%;
+        font-size: 60%;
         margin: 2%;
     }
 
