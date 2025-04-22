@@ -65,6 +65,7 @@
 
 .myprojects-link-ready {
     cursor: pointer;
+    text-decoration: none;
     transition: color 0.3s ease;
     color: #00cccc;
 }
@@ -111,6 +112,5 @@
 
     .myprojects-link {
         font-size: 50%;
-        padding: 2%;
     }
 }
