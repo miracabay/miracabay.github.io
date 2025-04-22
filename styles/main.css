@@ -1,6 +1,7 @@
 /* Genel Sayfa Düzeni */
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
 
 html, body {
     font-family: 'Comfortaa', sans-serif;
@@ -12,7 +13,7 @@ html, body {
 }
 
 .page-content {
-    position: absolute; /* Tüm ekrana göre konumlandır */
+    position: absolute;
     top: 50%;
     left: 50%;
     width: 100%;
@@ -112,7 +113,7 @@ html, body {
 @media (max-width: 800px) {
 
     .page-content {
-        position: fixed; /* Tüm ekrana göre konumlandır */
+        position: fixed;
         overflow-y: scroll;
         top: 50%;
         left: 50%;
