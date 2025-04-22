@@ -1,14 +1,16 @@
 .whoami-container {
     display: flex;
     flex-direction: column;
-    padding-top: 180px;
-    padding-bottom: 120px;
+    justify-content: center;
+    min-height: 70%;
+    padding: 120px 0 120px 0;
 }
 
 .whoami-beyazSatir,
 .whoami-siyahSatir {
     display: flex;
     align-items: center;
+    text-align: center;
     min-height: 120px;
     margin: 10px 0 10px 0;
     height: auto;
@@ -26,72 +28,57 @@
     font-family: 'Clicker Script', cursive;
     font-weight: bold;
     font-size: 30px;
+    margin: 0 30px 0 30px;
 }
 
 .whoami-beyazSatir h2 {
     color: #1e1e1e;
-    text-align: left;
-    padding-left: 150px;
 }
 
 .whoami-siyahSatir h2 {
     color: #ffffff;
-    text-align: right;
-    padding-right: 150px;
 }
 
 .whoami-beyazSatir p,
 .whoami-siyahSatir p {
-    flex: 3 1;
+    flex: 1.5;
     text-align: center;
     font-family: 'Comfortaa', sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.5em;
     min-height: calc(1.5em * 3);
-    max-width: 700px;
+    margin: 0 30px 0 30px;
 }
 
 .whoami-beyazSatir p {
     color: #1e1e1e;
-    padding-left: 100px;
-    padding-right: 20px;
 }
 
 .whoami-siyahSatir p {
     color: #ffffff;
-    padding-left: 20px;
-    padding-right: 100px;
 }
 
 
 @media (max-width: 800px) {
     .whoami-container {
-        padding-top: 20%;
-        padding-bottom: 10%;
+        min-height: 80%;
+        padding: 15% 0 15% 0;
     }
 
     .whoami-beyazSatir,
     .whoami-siyahSatir {
-        margin: 10px 0 10px 0;
-        height: auto;
+        min-height: 75%;
     }
 
     .whoami-beyazSatir h2,
     .whoami-siyahSatir h2 {
-        font-size: 20px;
-    }
-
-    .whoami-beyazSatir h2 {
-        padding-left: 15%;
-    }
-    
-    .whoami-siyahSatir h2 {
-        padding-right: 15%;
+        font-size: 95%;
+        margin: 2%;
     }
 
     .whoami-beyazSatir p,
     .whoami-siyahSatir p {
-        flex: 3 1;
-        font-size: 8px;
+        font-size: 50%;
+        margin: 2%;
     }
 }

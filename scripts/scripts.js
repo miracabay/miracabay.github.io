@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         console.error("Navbar yüklenirken hata oluştu:", error);
     }
 
-    const pages = ["home", "whoAmI", "myProjects", "contact", "invincibleXOX"];
+    const pages = ["home", "who-am-i", "my-projects", "contact"];
     for (let pageId of pages) {
         try {
             const pageResponse = await fetch(`/pages/${pageId}.html`);
