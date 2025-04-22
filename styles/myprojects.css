@@ -1,8 +1,9 @@
 .myprojects-container {
     display: flex;
     flex-direction: column;
-    padding-top: 180px;
-    padding-bottom: 120px;
+    justify-content: center;
+    min-height: 70%;
+    padding: 120px 0 120px 0;
 }
 
 .myprojects-beyazSatir,
@@ -87,8 +88,8 @@
 
 @media (max-width: 800px) {
     .myprojects-container {
-        padding-top: 50%;
-        padding-bottom: 15%;
+        min-height: 80%;
+        padding: 15% 0 15% 0;
     }
 
     .myprojects-beyazSatir,
