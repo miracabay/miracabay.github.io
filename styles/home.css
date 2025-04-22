@@ -49,12 +49,12 @@
     }
 
     .home-beyazSatir h1 {
-        font-size: 97%;
+        font-size: 150%;
         margin: 2%;
     }
 
     .home-beyazSatir p {
-        font-size: 70%;
-        margin: 2%;
+        font-size: 100%;
+        margin: 10%;
     }
 }
