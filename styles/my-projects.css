@@ -25,9 +25,9 @@
 .myprojects-beyazSatir h2,
 .myprojects-siyahSatir h2 {
     flex: 1;
-    font-family: 'Clicker Script', cursive;
+    font-family: 'Comfortaa', cursive;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
     margin: 0 30px 0 30px;
 }
 
@@ -100,7 +100,7 @@
 
     .myprojects-beyazSatir h2,
     .myprojects-siyahSatir h2 {
-        font-size: 95%;
+        font-size: 70%;
         margin: 2%;
     }
 
