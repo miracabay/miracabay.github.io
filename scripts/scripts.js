@@ -47,10 +47,12 @@ function setupNavbar() {
     navbar.appendChild(underline);
 
     function moveUnderline(target) {
-        const targetRect = target.getBoundingClientRect();
-        const navbarRect = navbar.getBoundingClientRect();
-        underline.style.left = `${targetRect.left - navbarRect.left + target.offsetWidth / 2}px`;
-        underline.style.width = `${target.offsetWidth * 0.5}px`;
+        requestAnimationFrame(() => {
+            const targetRect = target.getBoundingClientRect();
+            const navbarRect = navbar.getBoundingClientRect();
+            underline.style.left = `${targetRect.left - navbarRect.left + target.offsetWidth / 2}px`;
+            underline.style.width = `${target.offsetWidth * 0.5}px`;
+        });
     }
 
     const homeLink = document.querySelector('.navbar ul li a[href="#home"]');
@@ -102,10 +104,14 @@ function setupNavbar() {
         });
     });
 
+    let resizeTimeout;
     window.addEventListener("resize", () => {
-        const activeLink = document.querySelector(".navbar ul li a.active");
-        if (activeLink) {
-            moveUnderline(activeLink);
-        }
-    });
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(() => {
+            const activeLink = document.querySelector(".navbar ul li a.active");
+            if (activeLink) {
+                moveUnderline(activeLink);
+            }
+        }, 100); // 100–200ms gecikme
+    });    
 }

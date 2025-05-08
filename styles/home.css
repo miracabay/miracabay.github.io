@@ -16,7 +16,7 @@
     text-align: center;
     min-height: 120px;
     padding: 10px 0 10px 0;
-    height: auto;
+    height: max-content;
 }
 
 .home-beyazSatir h1 {
