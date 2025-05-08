@@ -19,6 +19,7 @@
     background-color: #ffffff;
 }
 .contact-siyahSatir {
+    flex-direction: row-reverse;
     background-color: #1e1e1e;
 }
 
