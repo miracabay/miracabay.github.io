@@ -1,4 +1,3 @@
-/* Footer */
 .footer {
     background-color: #1e1e1e;
     color: white;
@@ -6,14 +5,27 @@
     bottom: 0;
     width: 100%;
     height: 60px;
+    z-index: 999;
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom-left-radius: 60px;
     animation: slideRight 0.75s ease-out forwards;
+    overflow: hidden;
 }
 
-/* Footer Metni */
+.footer-mask {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    z-index: 998;
+    border-top-right-radius: 60px;
+    pointer-events: none;
+}
+
 .footer p {
     margin: 0;
     font-size: 12px;
@@ -23,7 +35,6 @@
     animation: slideUp 1.50s forwards 0.75s;
 }
 
-/* Sosyal Medya */
 .footer .social-media {
     list-style: none;
     display: flex;
@@ -43,31 +54,29 @@
     font-size: 24px;
     text-decoration: none;
     transition: color 0.3s ease;
-    display: block; /* Tüm simgeyi tıklanabilir yapmak için */
+    display: block;
 }
 
-/* Sosyal Medya Hover Renkleri */
 .footer .social-media li a.instagram:hover { color: #E4405F; }
 .footer .social-media li a.linkedin:hover { color: #0A66C2; }
 .footer .social-media li a.youtube:hover { color: #FF0000; }
 .footer .social-media li a.github:hover { color: #A9A9A9; }
 .footer .social-media li a.twitter:hover { color: #1DA1F2; }
 
-/* Sosyal Medya Hover Renkleri */
 .footer .social-media li a.instagram:hover {
-    filter: drop-shadow(0px 0px 10px rgba(228, 64, 95)); /* Instagram için renkli gölge */
+    filter: drop-shadow(0px 0px 10px rgba(228, 64, 95));
 }
 .footer .social-media li a.linkedin:hover {
-    filter: drop-shadow(0px 0px 10px rgba(10, 102, 194)); /* LinkedIn için renkli gölge */
+    filter: drop-shadow(0px 0px 10px rgba(10, 102, 194));
 }
 .footer .social-media li a.youtube:hover {
-    filter: drop-shadow(0px 0px 10px rgba(255, 0, 0)); /* YouTube için kırmızı gölge */
+    filter: drop-shadow(0px 0px 10px rgba(255, 0, 0));
 }
 .footer .social-media li a.github:hover {
-    filter: drop-shadow(0px 0px 10px rgba(169, 169, 169)); /* GitHub için koyu gri gölge */
+    filter: drop-shadow(0px 0px 10px rgba(169, 169, 169));
 }
 .footer .social-media li a.twitter:hover {
-    filter: drop-shadow(0px 0px 10px rgba(29, 161, 242)); /* Twitter için mavi gölge */
+    filter: drop-shadow(0px 0px 10px rgba(29, 161, 242));
 }
 
 
@@ -85,7 +94,7 @@
     }
 
     .footer .social-media {
-        justify-content: center; /* Mobilde ortaya hizala */
+        justify-content: center;
         width: 100%;
         right: auto;
         padding-top: 5px;

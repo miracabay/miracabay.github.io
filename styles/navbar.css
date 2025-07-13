@@ -11,6 +11,18 @@
     user-select: none;
 }
 
+.navbar-mask {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    z-index: 999;
+    border-bottom-left-radius: 60px;
+    pointer-events: none;
+}
+
 .navbar-logo {
     height: 60px;
     width: 60px;

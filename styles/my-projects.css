@@ -12,7 +12,7 @@
     align-items: center;
     text-align: center;
     min-height: 120px;
-    padding: 10px 0 10px 0;
+    padding: 40px 0 40px 0;
     height: max-content;
 }
 .myprojects-beyazSatir {
@@ -30,6 +30,18 @@
     font-weight: bold;
     font-size: 20px;
     margin: 0 30px 0 30px;
+}
+
+.myprojects-beyazSatir h2 .role,
+.myprojects-siyahSatir h2 .role {
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.myprojects-beyazSatir h2 .copyright,
+.myprojects-siyahSatir h2 .copyright {
+    font-size: 60%;
+    font-weight: normal;
 }
 
 .myprojects-beyazSatir h2 {
@@ -62,6 +74,17 @@
 .myprojects-link {
     font-weight: bold;
     font-size: 12px;
+}
+
+.myprojects-link-copyright {
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    color: #00cccc;
+}
+
+.myprojects-link-copyright:hover {
+    color: #3498db;
 }
 
 .myprojects-link-ready {
