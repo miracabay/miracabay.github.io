@@ -32,14 +32,8 @@
     margin: 0 30px 0 30px;
 }
 
-.myprojects-beyazSatir h2 .role,
-.myprojects-siyahSatir h2 .role {
-    font-size: 60%;
-    font-weight: normal;
-}
-
-.myprojects-beyazSatir h2 .copyright,
-.myprojects-siyahSatir h2 .copyright {
+.myprojects-beyazSatir h2 .info,
+.myprojects-siyahSatir h2 .info {
     font-size: 60%;
     font-weight: normal;
 }
@@ -58,9 +52,20 @@
     text-align: center;
     font-family: 'Comfortaa', sans-serif;
     font-size: 13px;
+    font-weight: bold;
     line-height: 1.5em;
     min-height: calc(1.5em * 3);
     margin: 0 30px 0 30px;
+}
+
+.myprojects-beyazSatir p .copyright,
+.myprojects-siyahSatir p .copyright {
+    font-size: 70%;
+    font-weight: bold;
+}
+
+.myprojects-beyazSatir p link {
+    font-size: 10%;
 }
 
 .myprojects-beyazSatir p {
@@ -74,9 +79,14 @@
 .myprojects-link {
     font-weight: bold;
     font-size: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    color: #00cccc;
 }
 
 .myprojects-link-copyright {
+    font-weight: bold;
     cursor: pointer;
     text-decoration: none;
     transition: color 0.3s ease;
