@@ -1,2 +1,2 @@
 # miracabay.github.io
-#personel site
+# my personal site
