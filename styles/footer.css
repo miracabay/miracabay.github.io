@@ -61,7 +61,7 @@
 .footer .social-media li a.linkedin:hover { color: #0A66C2; }
 .footer .social-media li a.youtube:hover { color: #FF0000; }
 .footer .social-media li a.github:hover { color: #A9A9A9; }
-.footer .social-media li a.twitter:hover { color: #1DA1F2; }
+.footer .social-media li a.twitter:hover { color: #A9A9A9; }
 
 .footer .social-media li a.instagram:hover {
     filter: drop-shadow(0px 0px 10px rgba(228, 64, 95));
