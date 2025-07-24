@@ -26,9 +26,9 @@
 .contact-beyazSatir h2,
 .contact-siyahSatir h2 {
     flex: 1;
-    font-family: 'Clicker Script', cursive;
+    font-family: 'Comfortaa', sans-serif;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 17px;
     margin: 0 30px 0 30px;
 }
 
@@ -49,9 +49,7 @@
     flex: 1;
     text-align: center;
     font-family: 'Comfortaa', sans-serif;
-    font-size: 17px;
-    line-height: 1.5em;
-    min-height: calc(1.5em * 3);
+    font-size: 13px;
     margin: 0 30px 0 30px;
 }
 
@@ -65,7 +63,7 @@
 
 .contact-link {
     font-weight: bold;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .contact-link-ready {
@@ -105,17 +103,17 @@
 
     .contact-beyazSatir h2,
     .contact-siyahSatir h2 {
-        font-size: 98%;
+        font-size: 50%;
         margin: 2%;
     }
 
     .contact-simge {
-        font-size: 80%;
+        font-size: 100%;
     }
 
     .contact-beyazSatir p,
     .contact-siyahSatir p {
-        font-size: 60%;
+        font-size: 50%;
         margin: 2%;
     }
 
