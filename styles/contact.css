@@ -11,7 +11,7 @@
     display: flex;
     align-items: center;
     text-align: center;
-    min-height: 120px;
+    min-height: 130px;
     padding: 10px 0 10px 0;
     height: max-content;
 }
@@ -98,7 +98,7 @@
 
     .contact-beyazSatir,
     .contact-siyahSatir {
-        min-height: 75%;
+        min-height: 80px;
     }
 
     .contact-beyazSatir h2,
