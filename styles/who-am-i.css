@@ -42,12 +42,14 @@
 
 .whoami-beyazSatir p,
 .whoami-siyahSatir p {
+    display: flex;
     flex: 1.5;
     text-align: center;
+    align-items: center;
     font-family: 'Comfortaa', sans-serif;
     font-size: 13px;
     line-height: 1.5em;
-    min-height: calc(1.5em * 3);
+    min-height: 100px;
     margin: 0 30px 0 30px;
 }
 
