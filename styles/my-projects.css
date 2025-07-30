@@ -121,6 +121,12 @@
     user-select: none;
 }
 
+.myprojects-link-lock {
+    color: #ffcc00;
+    cursor: not-allowed;
+    user-select: none;
+}
+
 .myprojects-link-archive {
     color: #cc0000;
     cursor: not-allowed;
